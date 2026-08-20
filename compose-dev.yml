@@ -1,0 +1,18 @@
+name: restaurante-menu-dev
+
+services:
+  postgres-menu-dev:
+    image: postgres:16-alpine
+    container_name: restaurante-postgres-menu-dev
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: restaurante_menu_db
+      POSTGRES_USER: restaurante
+      POSTGRES_PASSWORD: restaurante
+    ports:
+      - "15432:5432"
+    volumes:
+      - restaurante_menu_dev_data:/var/lib/postgresql/data
+
+volumes:
+  restaurante_menu_dev_data:

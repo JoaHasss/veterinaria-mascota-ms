@@ -1,4 +1,4 @@
-package pe.edu.upeu.menu.exception;
+package pe.edu.upeu.veterinaria.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
     public ResourceNotFoundException(String mensaje) {

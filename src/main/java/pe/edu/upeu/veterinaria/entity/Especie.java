@@ -1,16 +1,16 @@
-package pe.edu.upeu.menu.entity;
+package pe.edu.upeu.veterinaria.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "categorias_menu")
+@Table(name = "especies")
 @Getter
 @Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class CategoriaMenu {
+public class Especie {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

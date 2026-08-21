@@ -1,4 +1,4 @@
-package pe.edu.upeu.menu.entity;
+package pe.edu.upeu.veterinaria.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -6,13 +6,13 @@ import lombok.*;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "platos")
+@Table(name = "mascotas")
 @Getter
 @Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Plato {
+public class Mascota {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,13 +24,13 @@ public class Plato {
     @Column(name = "descripcion", length = 255)
     private String descripcion;
 
-    @Column(name = "precio", nullable = false, precision = 10, scale = 2)
-    private BigDecimal precio;
+    @Column(name = "peso", nullable = false, precision = 10, scale = 2)
+    private BigDecimal peso;
 
     @Column(name = "activo", nullable = false)
     private Boolean activo;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_categoria", nullable = false)
-    private CategoriaMenu categoriaMenu;
+    @JoinColumn(name = "id_especie", nullable = false)
+    private Especie especie;
 }

@@ -1,4 +1,4 @@
-package pe.edu.upeu.menu.exception;
+package pe.edu.upeu.veterinaria.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

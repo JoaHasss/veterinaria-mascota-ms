@@ -1,4 +1,4 @@
-package pe.edu.upeu.menu.dto;
+package pe.edu.upeu.veterinaria.dto;
 
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 
 @Getter
 @Setter
-public class PlatoRequest {
+public class MascotaRequest {
 
     @NotBlank
     @Size(max = 100)
@@ -22,11 +22,11 @@ public class PlatoRequest {
 
     @NotNull
     @DecimalMin(value = "0.0", inclusive = true)
-    private BigDecimal precio;
+    private BigDecimal peso;
 
     @NotNull
     private Boolean activo;
 
     @NotNull
-    private Long categoriaMenuId;
+    private Long especieId;
 }

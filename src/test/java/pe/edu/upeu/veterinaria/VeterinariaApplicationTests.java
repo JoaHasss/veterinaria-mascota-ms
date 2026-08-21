@@ -1,10 +1,10 @@
-package pe.edu.upeu.catalogo;
+package pe.edu.upeu.veterinaria;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PagatuCatalogoMsApplicationTests {
+class VeterinariaApplicationTests {
 
 	@Test
 	void contextLoads() {

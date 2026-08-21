@@ -1,18 +1,18 @@
-name: restaurante-menu-dev
+name: veterinaria-mascota-dev
 
 services:
-  postgres-menu-dev:
+  postgres-mascota-dev:
     image: postgres:16-alpine
-    container_name: restaurante-postgres-menu-dev
+    container_name: veterinaria-postgres-mascota-dev
     restart: unless-stopped
     environment:
-      POSTGRES_DB: restaurante_menu_db
-      POSTGRES_USER: restaurante
-      POSTGRES_PASSWORD: restaurante
+      POSTGRES_DB: veterinaria_mascota_db
+      POSTGRES_USER: veterinaria
+      POSTGRES_PASSWORD: veterinaria
     ports:
       - "15432:5432"
     volumes:
-      - restaurante_menu_dev_data:/var/lib/postgresql/data
+      - veterinaria_mascota_dev_data:/var/lib/postgresql/data
 
 volumes:
-  restaurante_menu_dev_data:
+  veterinaria_mascota_dev_data:

@@ -1,11 +1,11 @@
 server:
-  port: 8080
+  port: ${PORT:0}
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:15432/restaurante_menu_db
-    username: restaurante
-    password: restaurante
+    url: jdbc:postgresql://localhost:15432/veterinaria_mascota_db
+    username: veterinaria
+    password: veterinaria
     driver-class-name: org.postgresql.Driver
   flyway:
     enabled: true
@@ -29,7 +29,7 @@ springdoc:
 
 logging:
   level:
-    pe.edu.upeu.menu: DEBUG
+    pe.edu.upeu.veterinaria: DEBUG
 
 management:
   endpoints:

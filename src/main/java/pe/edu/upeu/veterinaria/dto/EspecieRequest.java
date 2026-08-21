@@ -1,4 +1,4 @@
-package pe.edu.upeu.menu.dto;
+package pe.edu.upeu.veterinaria.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class CategoriaMenuRequest {
+public class EspecieRequest {
 
     @NotBlank
     @Size(max = 100)

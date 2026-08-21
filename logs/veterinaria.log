@@ -1,0 +1,58 @@
+2026-08-20 22:20:31.779 [] INFO  p.e.u.v.VeterinariaApplication - Starting VeterinariaApplication using Java 21.0.10 with PID 23228 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\1ra tarea\Tarea-1\target\classes started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\1ra tarea\Tarea-1)
+2026-08-20 22:20:31.781 [] DEBUG p.e.u.v.VeterinariaApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-08-20 22:20:31.782 [] INFO  p.e.u.v.VeterinariaApplication - The following 1 profile is active: "dev"
+2026-08-20 22:20:31.839 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-08-20 22:20:31.840 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-08-20 22:20:33.042 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-20 22:20:33.094 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2026-08-20 22:20:33.701 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+2026-08-20 22:20:33.720 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-20 22:20:33.721 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-20 22:20:33.775 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1934 ms
+2026-08-20 22:20:33.948 [] DEBUG p.e.u.v.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-08-20 22:20:34.193 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-20 22:20:34.371 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@8aa6578
+2026-08-20 22:20:34.372 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-20 22:20:34.402 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:15432/veterinaria_mascota_db (PostgreSQL 16.13)
+2026-08-20 22:20:34.463 [] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "public"."flyway_schema_history" does not exist yet
+2026-08-20 22:20:34.466 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.021s)
+2026-08-20 22:20:34.486 [] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "public"."flyway_schema_history" ...
+2026-08-20 22:20:34.543 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": << Empty Schema >>
+2026-08-20 22:20:34.554 [] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "1 - create menu tables"
+2026-08-20 22:20:34.605 [] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema "public", now at version v1 (execution time 00:00.027s)
+2026-08-20 22:20:34.717 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-20 22:20:34.807 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-08-20 22:20:35.433 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-20 22:20:35.553 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:15432/veterinaria_mascota_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: veterinaria_mascota_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-20 22:20:36.643 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-20 22:20:36.693 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-20 22:20:36.767 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-20 22:20:37.814 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-20 22:20:38.420 [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-08-20 22:20:38.481 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-08-20 22:20:38.565 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 62048 (http) with context path '/'
+2026-08-20 22:20:38.576 [] INFO  p.e.u.v.VeterinariaApplication - Started VeterinariaApplication in 7.682 seconds (process running for 8.374)
+2026-08-20 22:20:38.658 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-08-20 22:20:38.664 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-08-20 22:21:36.295 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-20 22:21:36.300 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-20 22:21:36.302 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-08-20 22:22:58.359 [2de9762b-aeb1-4dd8-99fc-bb45c49bb35c] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('\' (code 92)): was expecting double-quote to start property name]
+2026-08-20 22:23:03.910 [ec1ab157-1f2a-4e7a-8382-ee44f8b5163c] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('\' (code 92)): was expecting double-quote to start property name]
+2026-08-20 22:25:39.469 [28d37b4d-d0da-4b50-afab-9c76eed7f944] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 352 ms
+2026-08-20 22:28:35.991 [] INFO  p.e.u.v.VeterinariaApplication - Starting VeterinariaApplication using Java 21.0.10 with PID 34348 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\1ra tarea\Tarea-1\target\classes started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\1ra tarea\Tarea-1)
+2026-08-20 22:28:35.993 [] DEBUG p.e.u.v.VeterinariaApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-08-20 22:28:35.994 [] INFO  p.e.u.v.VeterinariaApplication - The following 1 profile is active: "dev"
+2026-08-20 22:28:36.030 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-08-20 22:28:36.030 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'

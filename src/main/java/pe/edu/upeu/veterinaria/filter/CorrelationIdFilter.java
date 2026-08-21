@@ -1,4 +1,4 @@
-package pe.edu.upeu.menu.filter;
+package pe.edu.upeu.veterinaria.filter;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

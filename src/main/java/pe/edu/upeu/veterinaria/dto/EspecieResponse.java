@@ -1,4 +1,4 @@
-package pe.edu.upeu.menu.dto;
+package pe.edu.upeu.veterinaria.dto;
 
 import lombok.*;
 
@@ -7,7 +7,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class CategoriaMenuResponse {
+public class EspecieResponse {
     private Long id;
     private String nombre;
     private String descripcion;

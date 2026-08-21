@@ -1,11 +1,11 @@
-package pe.edu.upeu.menu;
+package pe.edu.upeu.veterinaria;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MenuApplication {
+public class VeterinariaApplication {
     public static void main(String[] args) {
-        SpringApplication.run(MenuApplication.class, args);
+        SpringApplication.run(VeterinariaApplication.class, args);
     }
 }

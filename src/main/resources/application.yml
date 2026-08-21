@@ -1,5 +1,5 @@
 spring:
   application:
-    name: restaurante-menu-ms
+    name: veterinaria-mascota-ms
   profiles:
     active: dev

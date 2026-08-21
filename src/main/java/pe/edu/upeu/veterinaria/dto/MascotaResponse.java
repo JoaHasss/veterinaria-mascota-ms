@@ -1,4 +1,4 @@
-package pe.edu.upeu.menu.dto;
+package pe.edu.upeu.veterinaria.dto;
 
 import lombok.*;
 
@@ -9,11 +9,11 @@ import java.math.BigDecimal;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class PlatoResponse {
+public class MascotaResponse {
     private Long id;
     private String nombre;
     private String descripcion;
-    private BigDecimal precio;
+    private BigDecimal peso;
     private Boolean activo;
-    private CategoriaMenuResponse categoriaMenu;
+    private EspecieResponse especie;
 }

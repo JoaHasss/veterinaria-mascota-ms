@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>pe.edu.upeu</groupId>
-	<artifactId>restaurante-menu-ms</artifactId>
+	<artifactId>veterinaria-mascota-ms</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>restaurante-menu-ms</name>
-	<description>Microservicio de menu para restaurante</description>
+	<name>veterinaria-mascota-ms</name>
+	<description>Microservicio de mascotas para veterinaria</description>
 	<url/>
 	<licenses>
 		<license/>

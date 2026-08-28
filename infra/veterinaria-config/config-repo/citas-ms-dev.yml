@@ -1,11 +1,11 @@
 server:
-  port: ${PORT:0}
+  port: 8095
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:15432/veterinaria_mascota_db
-    username: veterinaria
-    password: veterinaria
+    url: jdbc:postgresql://localhost:15433/veterinaria_citas_db
+    username: citas
+    password: citas
     driver-class-name: org.postgresql.Driver
   flyway:
     enabled: true
@@ -29,7 +29,7 @@ springdoc:
 
 logging:
   level:
-    pe.edu.upeu.veterinaria: DEBUG
+    pe.edu.upeu.citas: DEBUG
 
 management:
   endpoints:

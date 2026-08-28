@@ -1,0 +1,18 @@
+name: citas-dev
+
+services:
+  postgres-citas-dev:
+    image: postgres:16-alpine
+    container_name: citas-postgres-dev
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: veterinaria_citas_db
+      POSTGRES_USER: citas
+      POSTGRES_PASSWORD: citas
+    ports:
+      - "15433:5432"
+    volumes:
+      - citas_dev_data:/var/lib/postgresql/data
+
+volumes:
+  citas_dev_data:

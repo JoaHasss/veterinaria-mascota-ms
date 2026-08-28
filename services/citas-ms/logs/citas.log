@@ -1,0 +1,115 @@
+2026-08-27 20:10:46.885 [] INFO  pe.edu.upeu.citas.CitasApplication - Starting CitasApplication v0.0.1-SNAPSHOT using Java 21.0.10 with PID 32636 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\1ra tarea\Tarea-1\services\citas-ms\target\citas-ms-0.0.1-SNAPSHOT.jar started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\1ra tarea\Tarea-1\services\citas-ms)
+2026-08-27 20:10:46.888 [] DEBUG pe.edu.upeu.citas.CitasApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-08-27 20:10:46.895 [] INFO  pe.edu.upeu.citas.CitasApplication - The following 1 profile is active: "dev"
+2026-08-27 20:10:47.058 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-08-27 20:10:47.058 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=citas-ms, profiles=[default], label=null, version=null, state=null
+2026-08-27 20:10:47.066 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-08-27 20:10:47.066 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=citas-ms, profiles=[dev], label=null, version=null, state=null
+2026-08-27 20:10:50.999 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-27 20:10:51.172 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 125 ms. Found 1 JPA repository interface.
+2026-08-27 20:10:52.322 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=51ade05a-fc44-3fce-880e-8eeef5fe2f87
+2026-08-27 20:10:54.899 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8090 (http)
+2026-08-27 20:10:54.943 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-27 20:10:54.943 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-27 20:10:55.048 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 7971 ms
+2026-08-27 20:10:55.575 [] DEBUG p.e.u.c.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-08-27 20:10:56.459 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-27 20:10:57.019 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c82bac3
+2026-08-27 20:10:57.023 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-27 20:10:57.114 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:15433/veterinaria_citas_db (PostgreSQL 16.13)
+2026-08-27 20:10:57.308 [] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "public"."flyway_schema_history" does not exist yet
+2026-08-27 20:10:57.322 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.067s)
+2026-08-27 20:10:57.379 [] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "public"."flyway_schema_history" ...
+2026-08-27 20:10:57.532 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": << Empty Schema >>
+2026-08-27 20:10:57.562 [] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "1 - create citas tables"
+2026-08-27 20:10:57.649 [] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema "public", now at version v1 (execution time 00:00.033s)
+2026-08-27 20:10:57.933 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-27 20:10:58.090 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-08-27 20:10:59.519 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-27 20:10:59.776 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:15433/veterinaria_citas_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: veterinaria_citas_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-27 20:11:02.151 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-27 20:11:02.259 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-27 20:11:02.545 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-27 20:11:03.257 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-27 20:11:05.488 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-08-27 20:11:05.706 [] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-08-27 20:11:05.716 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-27 20:11:05.728 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-08-27 20:11:05.787 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-08-27 20:11:05.833 [] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-08-27 20:11:05.892 [] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
+2026-08-27 20:12:14.068 [] INFO  pe.edu.upeu.citas.CitasApplication - Starting CitasApplication v0.0.1-SNAPSHOT using Java 21.0.10 with PID 2120 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\1ra tarea\Tarea-1\services\citas-ms\target\citas-ms-0.0.1-SNAPSHOT.jar started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\1ra tarea\Tarea-1\services\citas-ms)
+2026-08-27 20:12:14.086 [] DEBUG pe.edu.upeu.citas.CitasApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-08-27 20:12:14.088 [] INFO  pe.edu.upeu.citas.CitasApplication - The following 1 profile is active: "dev"
+2026-08-27 20:12:14.258 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-08-27 20:12:14.258 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=citas-ms, profiles=[default], label=null, version=null, state=null
+2026-08-27 20:12:14.258 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-08-27 20:12:14.258 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=citas-ms, profiles=[dev], label=null, version=null, state=null
+2026-08-27 20:12:18.258 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-27 20:12:18.492 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 188 ms. Found 1 JPA repository interface.
+2026-08-27 20:12:19.583 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=51ade05a-fc44-3fce-880e-8eeef5fe2f87
+2026-08-27 20:12:21.678 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8095 (http)
+2026-08-27 20:12:21.771 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-27 20:12:21.771 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-27 20:12:21.920 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 7637 ms
+2026-08-27 20:12:22.502 [] DEBUG p.e.u.c.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-08-27 20:12:23.426 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-27 20:12:24.062 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@20c283b4
+2026-08-27 20:12:24.062 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-27 20:12:24.169 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:15433/veterinaria_citas_db (PostgreSQL 16.13)
+2026-08-27 20:12:24.440 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.119s)
+2026-08-27 20:12:24.504 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+2026-08-27 20:12:24.514 [] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-08-27 20:12:24.866 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-27 20:12:25.052 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-08-27 20:12:26.642 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-27 20:12:26.901 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:15433/veterinaria_citas_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: veterinaria_citas_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-27 20:12:29.351 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-27 20:12:29.472 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-27 20:12:29.751 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-27 20:12:30.498 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-27 20:12:32.346 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-08-27 20:12:32.718 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8095 (http) with context path '/'
+2026-08-27 20:12:32.774 [] INFO  pe.edu.upeu.citas.CitasApplication - Started CitasApplication in 23.457 seconds (process running for 25.295)
+2026-08-27 20:12:32.992 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-08-27 20:12:32.992 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-08-27 20:12:33.618 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-27 20:12:33.618 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-27 20:12:33.622 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms

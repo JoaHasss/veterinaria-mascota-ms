@@ -32,3 +32,11 @@ management:
   endpoint:
     health:
       show-details: never
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://veterinaria-eureka:18761/eureka}
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}

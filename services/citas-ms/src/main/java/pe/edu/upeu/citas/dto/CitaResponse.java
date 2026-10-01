@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 public class CitaResponse {
     private Long id;
     private Long mascotaId;
+    private String mascotaNombre;
     private String motivo;
     private LocalDateTime fechaHora;
     private String estado;

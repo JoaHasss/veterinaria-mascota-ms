@@ -21,6 +21,9 @@ public class Cita {
     @Column(name = "mascota_id", nullable = false)
     private Long mascotaId;
 
+    @Column(name = "mascota_nombre", nullable = false, length = 100)
+    private String mascotaNombre;
+
     @Column(name = "motivo", nullable = false, length = 255)
     private String motivo;
 

@@ -21,6 +21,7 @@ public class CitaMapper {
         return CitaResponse.builder()
                 .id(cita.getId())
                 .mascotaId(cita.getMascotaId())
+                .mascotaNombre(cita.getMascotaNombre())
                 .motivo(cita.getMotivo())
                 .fechaHora(cita.getFechaHora())
                 .estado(cita.getEstado())

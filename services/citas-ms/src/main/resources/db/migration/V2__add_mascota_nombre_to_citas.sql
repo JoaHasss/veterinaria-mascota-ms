@@ -1,0 +1,5 @@
+ALTER TABLE citas
+    ADD COLUMN mascota_nombre VARCHAR(100) NOT NULL DEFAULT 'N/D';
+
+ALTER TABLE citas
+    ALTER COLUMN mascota_nombre DROP DEFAULT;

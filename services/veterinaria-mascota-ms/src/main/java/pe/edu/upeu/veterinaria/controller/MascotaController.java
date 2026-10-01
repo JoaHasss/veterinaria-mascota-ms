@@ -5,11 +5,13 @@ import pe.edu.upeu.veterinaria.dto.MascotaResponse;
 import pe.edu.upeu.veterinaria.service.MascotaService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Slf4j
 @RestController
 @RequestMapping("/api/v1/mascotas")
 @RequiredArgsConstructor
@@ -24,6 +26,7 @@ public class MascotaController {
 
     @GetMapping("/{id}")
     public MascotaResponse obtener(@PathVariable Long id) {
+        log.info("Solicitud recibida (posiblemente desde citas-ms vía Feign) para mascotaId={}", id);
         return mascotaService.obtener(id);
     }
 

@@ -4,8 +4,9 @@ server:
 spring:
   cloud:
     gateway:
-      mvc:
-        routes:
+      server:
+        webmvc:
+          routes:
           - id: veterinaria-mascota-ms
             uri: lb://veterinaria-mascota-ms
             predicates:

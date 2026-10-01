@@ -30,6 +30,7 @@ springdoc:
 logging:
   level:
     pe.edu.upeu.citas: DEBUG
+    pe.edu.upeu.citas.client.MascotaClient: DEBUG
 
 management:
   endpoints:

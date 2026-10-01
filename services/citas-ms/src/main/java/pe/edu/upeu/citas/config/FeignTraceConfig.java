@@ -1,5 +1,6 @@
 package pe.edu.upeu.citas.config;
 
+import feign.Logger;
 import feign.RequestInterceptor;
 import org.slf4j.MDC;
 import org.springframework.context.annotation.Bean;
@@ -17,5 +18,10 @@ public class FeignTraceConfig {
                 template.header(CorrelationIdFilter.TRACE_ID_HEADER, traceId);
             }
         };
+    }
+
+    @Bean
+    public Logger.Level feignLoggerLevel() {
+        return Logger.Level.HEADERS;
     }
 }

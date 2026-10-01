@@ -9,10 +9,12 @@ import pe.edu.upeu.citas.exception.ResourceNotFoundException;
 import pe.edu.upeu.citas.mapper.CitaMapper;
 import pe.edu.upeu.citas.repository.CitaRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class CitaService {
@@ -35,10 +37,14 @@ public class CitaService {
     }
 
     public CitaResponse crear(CitaRequest request) {
+        log.info("Creando cita para mascotaId={}, consultando veterinaria-mascota-ms...", request.getMascotaId());
         MascotaDto mascota = validarMascota(request.getMascotaId());
         Cita cita = citaMapper.toEntity(request);
         aplicarDatosMascota(cita, mascota, request.getEstado());
-        return citaMapper.toResponse(citaRepository.save(cita));
+        Cita guardada = citaRepository.save(cita);
+        log.info("Cita {} creada con mascotaNombre='{}' y estado='{}'",
+                guardada.getId(), guardada.getMascotaNombre(), guardada.getEstado());
+        return citaMapper.toResponse(guardada);
     }
 
     public CitaResponse actualizar(Long id, CitaRequest request) {

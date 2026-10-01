@@ -14,7 +14,11 @@ public class MascotaClientService {
 
     @CircuitBreaker(name = "mascotaService", fallbackMethod = "fallbackObtener")
     public MascotaDto obtener(Long mascotaId) {
-        return mascotaClient.obtener(mascotaId);
+        log.info("Consultando veterinaria-mascota-ms para mascotaId={} (circuit breaker CLOSED/HALF_OPEN)", mascotaId);
+        MascotaDto mascota = mascotaClient.obtener(mascotaId);
+        log.info("Respuesta de veterinaria-mascota-ms para mascotaId={}: nombre='{}', activo={}",
+                mascotaId, mascota.getNombre(), mascota.getActivo());
+        return mascota;
     }
 
     /**

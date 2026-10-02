@@ -18,6 +18,9 @@ public class Cita {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "id_cliente")
+    private Long idCliente;
+
     @Column(name = "mascota_id", nullable = false)
     private Long mascotaId;
 

@@ -1,0 +1,53 @@
+server:
+  port: 18080
+
+spring:
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes:
+          - id: veterinaria-mascota-ms
+            uri: lb://veterinaria-mascota-ms
+            predicates:
+              - Path=/api/v1/mascotas/**,/api/v1/especies/**
+          - id: citas-ms
+            uri: lb://citas-ms
+            predicates:
+              - Path=/api/v1/citas/**
+          - id: veterinaria-auth-ms
+            uri: lb://veterinaria-auth-ms
+            predicates:
+              - Path=/api/v1/auth/**
+          - id: veterinaria-cliente-ms
+            uri: lb://veterinaria-cliente-ms
+            predicates:
+              - Path=/api/v1/clientes/**
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://veterinaria-auth-ms:8085
+          jwk-set-uri: http://veterinaria-auth-ms:8085/.well-known/jwks.json
+
+logging:
+  level:
+    pe.edu.upeu.gateway: INFO
+    org.springframework.security: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,gateway
+  endpoint:
+    health:
+      show-details: never
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://veterinaria-eureka:18761/eureka}
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}

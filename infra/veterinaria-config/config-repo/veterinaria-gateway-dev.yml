@@ -15,10 +15,25 @@ spring:
             uri: lb://citas-ms
             predicates:
               - Path=/api/v1/citas/**
+          - id: veterinaria-auth-ms
+            uri: lb://veterinaria-auth-ms
+            predicates:
+              - Path=/api/v1/auth/**
+          - id: veterinaria-cliente-ms
+            uri: lb://veterinaria-cliente-ms
+            predicates:
+              - Path=/api/v1/clientes/**
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8085
+          jwk-set-uri: http://localhost:8085/.well-known/jwks.json
 
 logging:
   level:
     pe.edu.upeu.gateway: DEBUG
+    org.springframework.security: INFO
 
 management:
   endpoints:

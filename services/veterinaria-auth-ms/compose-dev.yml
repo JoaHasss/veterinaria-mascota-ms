@@ -1,0 +1,18 @@
+name: veterinaria-auth-dev
+
+services:
+  postgres-auth-dev:
+    image: postgres:16-alpine
+    container_name: veterinaria-postgres-auth-dev
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: veterinaria_auth_db
+      POSTGRES_USER: veterinaria
+      POSTGRES_PASSWORD: veterinaria
+    ports:
+      - "15435:5432"
+    volumes:
+      - veterinaria_auth_dev_data:/var/lib/postgresql/data
+
+volumes:
+  veterinaria_auth_dev_data:

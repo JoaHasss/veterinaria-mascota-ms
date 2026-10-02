@@ -20,6 +20,7 @@ public class CitaMapper {
     public CitaResponse toResponse(Cita cita) {
         return CitaResponse.builder()
                 .id(cita.getId())
+                .idCliente(cita.getIdCliente())
                 .mascotaId(cita.getMascotaId())
                 .mascotaNombre(cita.getMascotaNombre())
                 .motivo(cita.getMotivo())

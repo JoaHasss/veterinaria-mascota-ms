@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class CitaResponse {
     private Long id;
+    private Long idCliente;
     private Long mascotaId;
     private String mascotaNombre;
     private String motivo;

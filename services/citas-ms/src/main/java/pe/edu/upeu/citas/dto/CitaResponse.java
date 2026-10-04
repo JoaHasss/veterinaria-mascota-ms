@@ -2,6 +2,7 @@ package pe.edu.upeu.citas.dto;
 
 import lombok.*;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Getter
@@ -17,4 +18,6 @@ public class CitaResponse {
     private String motivo;
     private LocalDateTime fechaHora;
     private String estado;
+    private BigDecimal monto;
+    private String metodoPago;
 }

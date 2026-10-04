@@ -23,6 +23,10 @@ spring:
             uri: lb://veterinaria-cliente-ms
             predicates:
               - Path=/api/v1/clientes/**
+          - id: veterinaria-pago-ms
+            uri: lb://veterinaria-pago-ms
+            predicates:
+              - Path=/api/v1/pagos/**
   security:
     oauth2:
       resourceserver:

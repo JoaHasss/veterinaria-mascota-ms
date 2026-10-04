@@ -13,13 +13,31 @@ spring:
     username: citas
     password: citas
     driver-class-name: org.postgresql.Driver
+  kafka:
+    bootstrap-servers: localhost:19092
+    consumer:
+      group-id: citas-ms
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+      properties:
+        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JacksonJsonDeserializer
+        spring.json.value.default.type: pe.edu.upeu.citas.event.PagoValidadoEvento
+        spring.json.use.type.headers: false
+        spring.json.trusted.packages: "*"
+    producer:
+      acks: all
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JacksonJsonSerializer
+      properties:
+        spring.json.add.type.headers: false
   flyway:
     enabled: true
     locations: classpath:db/migration
   jpa:
     hibernate:
       ddl-auto: validate
-    show-sql: true
+    show-sql: false
     properties:
       hibernate:
         format_sql: true
@@ -37,6 +55,7 @@ logging:
   level:
     pe.edu.upeu.citas: DEBUG
     pe.edu.upeu.citas.client.MascotaClient: DEBUG
+    org.apache.kafka: WARN
 
 management:
   endpoints:
@@ -74,3 +93,9 @@ feign:
       veterinaria-mascota-ms:
         connect-timeout: 2000
         read-timeout: 2000
+
+app:
+  kafka:
+    topics:
+      cita-eventos: cita-eventos
+      pago-eventos: pago-eventos

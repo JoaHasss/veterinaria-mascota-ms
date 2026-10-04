@@ -26,6 +26,8 @@ public class CitaMapper {
                 .motivo(cita.getMotivo())
                 .fechaHora(cita.getFechaHora())
                 .estado(cita.getEstado())
+                .monto(cita.getMonto())
+                .metodoPago(cita.getMetodoPago())
                 .build();
     }
 }

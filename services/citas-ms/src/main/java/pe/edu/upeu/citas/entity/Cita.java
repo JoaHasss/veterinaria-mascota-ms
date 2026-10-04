@@ -3,6 +3,7 @@ package pe.edu.upeu.citas.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
@@ -35,4 +36,10 @@ public class Cita {
 
     @Column(name = "estado", nullable = false, length = 20)
     private String estado;
+
+    @Column(name = "monto", precision = 10, scale = 2)
+    private BigDecimal monto;
+
+    @Column(name = "metodo_pago", length = 20)
+    private String metodoPago;
 }

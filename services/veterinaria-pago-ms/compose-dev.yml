@@ -1,0 +1,18 @@
+name: veterinaria-pago-dev
+
+services:
+  postgres-pago-dev:
+    image: postgres:16-alpine
+    container_name: veterinaria-postgres-pago-dev
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: veterinaria_pago_db
+      POSTGRES_USER: veterinaria
+      POSTGRES_PASSWORD: veterinaria
+    ports:
+      - "15437:5432"
+    volumes:
+      - veterinaria_pago_dev_data:/var/lib/postgresql/data
+
+volumes:
+  veterinaria_pago_dev_data:

@@ -49,6 +49,8 @@ public class SecurityConfig {
                         .requestMatchers("/api/v1/citas/**").hasRole(CLIENTE)
                         // Perfiles de cliente: el control fino (ABAC) lo hace veterinaria-cliente-ms
                         .requestMatchers("/api/v1/clientes/**").hasAnyRole(CLIENTE, ADMIN)
+                        // Pagos (S8): solo consulta; se registran al consumir el evento cita.creada
+                        .requestMatchers(HttpMethod.GET, "/api/v1/pagos/**").hasAnyRole(CLIENTE, ADMIN)
                         .anyRequest().authenticated()
                 )
                 .oauth2ResourceServer(oauth2 -> oauth2

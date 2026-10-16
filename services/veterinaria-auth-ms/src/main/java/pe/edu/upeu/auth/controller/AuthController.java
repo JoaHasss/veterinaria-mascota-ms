@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import pe.edu.upeu.auth.dto.LoginRequest;
 import pe.edu.upeu.auth.dto.LoginResponse;
 import pe.edu.upeu.auth.dto.RegistroRequest;
+import pe.edu.upeu.auth.dto.RegistroResponse;
 import pe.edu.upeu.auth.service.AuthService;
 
 import java.util.Map;
@@ -26,10 +27,19 @@ public class AuthController {
         return ResponseEntity.ok(authService.login(request));
     }
 
+    /**
+     * S9: 202 Accepted, no 201: la cuenta queda PENDIENTE hasta que
+     * veterinaria-cliente-ms confirme (cliente.creado) o rechace el perfil.
+     */
     @PostMapping("/api/v1/auth/registro")
-    public ResponseEntity<Void> registro(@Valid @RequestBody RegistroRequest request) {
-        authService.registro(request);
-        return ResponseEntity.status(HttpStatus.CREATED).build();
+    public ResponseEntity<RegistroResponse> registro(@Valid @RequestBody RegistroRequest request) {
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(authService.registro(request));
+    }
+
+    /** S9: estado del registro (PENDIENTE, ACTIVO o RECHAZADO). */
+    @GetMapping("/api/v1/auth/registro/{usuarioId}")
+    public RegistroResponse estadoRegistro(@PathVariable Long usuarioId) {
+        return authService.consultarRegistro(usuarioId);
     }
 
     /**

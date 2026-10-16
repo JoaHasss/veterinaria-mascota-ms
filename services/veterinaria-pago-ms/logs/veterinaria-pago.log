@@ -1,0 +1,207 @@
+2026-10-03 20:27:01.987 [] INFO  p.e.u.p.VeterinariaPagoApplication - Starting VeterinariaPagoApplication v0.0.1-SNAPSHOT using Java 21.0.10 with PID 36880 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-pago-ms\target\veterinaria-pago-ms-0.0.1-SNAPSHOT.jar started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-pago-ms)
+2026-10-03 20:27:01.993 [] DEBUG p.e.u.p.VeterinariaPagoApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-10-03 20:27:01.995 [] INFO  p.e.u.p.VeterinariaPagoApplication - The following 1 profile is active: "dev"
+2026-10-03 20:27:02.101 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-10-03 20:27:02.101 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-pago-ms, profiles=[default], label=null, version=null, state=null
+2026-10-03 20:27:02.101 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-10-03 20:27:02.101 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-pago-ms, profiles=[dev], label=null, version=null, state=null
+2026-10-03 20:27:04.623 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-03 20:27:04.940 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 291 ms. Found 1 JPA repository interface.
+2026-10-03 20:27:06.090 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c90b1e79-1d2f-3def-b36d-002532b0d9bc
+2026-10-03 20:27:07.151 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+2026-10-03 20:27:07.194 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-03 20:27:07.194 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-10-03 20:27:07.287 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 5174 ms
+2026-10-03 20:27:07.899 [] DEBUG p.e.u.p.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-10-03 20:27:08.838 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-03 20:27:09.374 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@520ec7a7
+2026-10-03 20:27:09.379 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-03 20:27:09.570 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:15437/veterinaria_pago_db (PostgreSQL 16.13)
+2026-10-03 20:27:09.719 [] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "public"."flyway_schema_history" does not exist yet
+2026-10-03 20:27:09.727 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.046s)
+2026-10-03 20:27:09.779 [] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "public"."flyway_schema_history" ...
+2026-10-03 20:27:09.908 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": << Empty Schema >>
+2026-10-03 20:27:09.931 [] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "1 - create pagos"
+2026-10-03 20:27:10.006 [] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema "public", now at version v1 (execution time 00:00.031s)
+2026-10-03 20:27:10.288 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-03 20:27:10.490 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-10-03 20:27:11.972 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-03 20:27:12.222 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:15437/veterinaria_pago_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: veterinaria_pago_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-03 20:27:14.332 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-03 20:27:14.541 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-03 20:27:14.704 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-03 20:27:15.239 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-03 20:27:16.657 [] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-10-03 20:27:16.709 [] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-03 20:27:16.722 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2026-10-03 20:27:18.062 [] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-10-03 20:27:18.135 [] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-10-03 20:27:18.146 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-03 20:27:18.162 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-10-03 20:27:18.162 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-10-03 20:27:18.162 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-10-03 20:27:18.162 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-10-03 20:27:18.162 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-10-03 20:27:18.163 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-10-03 20:27:18.163 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-10-03 20:27:18.716 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-10-03 20:27:18.720 [] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-10-03 20:27:18.725 [] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-10-03 20:27:18.728 [] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1791077238727 with initial instances count: 2
+2026-10-03 20:27:18.732 [] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application VETERINARIA-PAGO-MS with eureka with status UP
+2026-10-03 20:27:18.732 [] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1791077238732, current=UP, previous=STARTING]
+2026-10-03 20:27:18.735 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-PAGO-MS/veterinaria-pago-ms:8087: registering service...
+2026-10-03 20:27:18.830 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8087 (http) with context path '/'
+2026-10-03 20:27:18.833 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-PAGO-MS/veterinaria-pago-ms:8087 - registration status: 204
+2026-10-03 20:27:18.838 [] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8087
+2026-10-03 20:27:19.133 [] INFO  p.e.u.p.VeterinariaPagoApplication - Started VeterinariaPagoApplication in 19.539 seconds (process running for 20.872)
+2026-10-03 20:27:19.287 [] INFO  o.s.k.l.KafkaMessageListenerContainer - veterinaria-pago-ms: partitions assigned: [cita-eventos-0, cita-eventos-1, cita-eventos-2]
+2026-10-03 20:27:20.190 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-03 20:27:20.191 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-03 20:27:20.195 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-10-03 20:28:13.478 [] INFO  p.e.u.pago.kafka.CitaEventosConsumer - component=cita-consumer eventType=cita.creada citaId=4 status=RECIBIDO partition=1 offset=0
+2026-10-03 20:28:14.122 [] INFO  p.e.u.pago.service.PagoServiceImpl - component=pago-service eventType=cita.creada citaId=4 status=PAGO_REGISTRADO pagoId=1 monto=95.50 metodoPago=YAPE
+2026-10-03 20:28:14.286 [] INFO  p.e.u.pago.kafka.PagoEventosProducer - component=pago-producer eventType=pago.validado citaId=4 status=PUBLICADO topic=pago-eventos partition=1 offset=0
+2026-10-03 20:30:51.753 [] INFO  p.e.u.p.VeterinariaPagoApplication - Starting VeterinariaPagoApplication v0.0.1-SNAPSHOT using Java 21.0.10 with PID 38352 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-pago-ms\target\veterinaria-pago-ms-0.0.1-SNAPSHOT.jar started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-pago-ms)
+2026-10-03 20:30:51.758 [] DEBUG p.e.u.p.VeterinariaPagoApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-10-03 20:30:51.759 [] INFO  p.e.u.p.VeterinariaPagoApplication - The following 1 profile is active: "dev"
+2026-10-03 20:30:51.822 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-10-03 20:30:51.822 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-pago-ms, profiles=[default], label=null, version=null, state=null
+2026-10-03 20:30:51.822 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-10-03 20:30:51.822 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-pago-ms, profiles=[dev], label=null, version=null, state=null
+2026-10-03 20:30:53.240 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-03 20:30:53.485 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 218 ms. Found 1 JPA repository interface.
+2026-10-03 20:30:54.115 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c90b1e79-1d2f-3def-b36d-002532b0d9bc
+2026-10-03 20:30:54.942 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+2026-10-03 20:30:54.988 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-03 20:30:54.990 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-10-03 20:30:55.077 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3247 ms
+2026-10-03 20:30:55.510 [] DEBUG p.e.u.p.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-10-03 20:30:55.988 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-03 20:30:56.286 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@50008974
+2026-10-03 20:30:56.289 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-03 20:30:56.338 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:15437/veterinaria_pago_db (PostgreSQL 16.13)
+2026-10-03 20:30:56.454 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.058s)
+2026-10-03 20:30:56.492 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+2026-10-03 20:30:56.498 [] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-10-03 20:30:56.669 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-03 20:30:56.785 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-10-03 20:30:57.753 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-03 20:30:57.918 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:15437/veterinaria_pago_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: veterinaria_pago_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-03 20:30:59.620 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-03 20:30:59.706 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-03 20:30:59.856 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-03 20:31:00.464 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-03 20:31:01.810 [] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-10-03 20:31:01.867 [] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-03 20:31:01.874 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2026-10-03 20:31:03.101 [] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-10-03 20:31:03.150 [] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-10-03 20:31:03.157 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-03 20:31:03.168 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-10-03 20:31:03.168 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-10-03 20:31:03.168 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-10-03 20:31:03.168 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-10-03 20:31:03.168 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-10-03 20:31:03.168 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-10-03 20:31:03.168 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-10-03 20:31:03.606 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-10-03 20:31:03.609 [] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-10-03 20:31:03.612 [] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-10-03 20:31:03.614 [] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1791077463614 with initial instances count: 5
+2026-10-03 20:31:03.618 [] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application VETERINARIA-PAGO-MS with eureka with status UP
+2026-10-03 20:31:03.618 [] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1791077463618, current=UP, previous=STARTING]
+2026-10-03 20:31:03.620 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-PAGO-MS/veterinaria-pago-ms:8087: registering service...
+2026-10-03 20:31:03.649 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8087 (http) with context path '/'
+2026-10-03 20:31:03.651 [] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8087
+2026-10-03 20:31:03.654 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-PAGO-MS/veterinaria-pago-ms:8087 - registration status: 204
+2026-10-03 20:31:03.806 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-03 20:31:03.807 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-03 20:31:03.810 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-10-03 20:31:03.903 [] INFO  p.e.u.p.VeterinariaPagoApplication - Started VeterinariaPagoApplication in 14.002 seconds (process running for 15.102)
+2026-10-03 20:31:04.012 [] INFO  o.s.k.l.KafkaMessageListenerContainer - veterinaria-pago-ms: partitions assigned: [cita-eventos-0, cita-eventos-1, cita-eventos-2]
+2026-10-03 20:31:04.070 [] INFO  p.e.u.pago.kafka.CitaEventosConsumer - component=cita-consumer eventType=cita.creada citaId=6 status=RECIBIDO partition=1 offset=1
+2026-10-03 20:31:04.882 [] INFO  p.e.u.pago.service.PagoServiceImpl - component=pago-service eventType=cita.creada citaId=6 status=PAGO_REGISTRADO pagoId=2 monto=60.00 metodoPago=EFECTIVO
+2026-10-03 20:31:04.974 [] INFO  p.e.u.pago.kafka.CitaEventosConsumer - component=cita-consumer eventType=cita.creada citaId=5 status=RECIBIDO partition=0 offset=0
+2026-10-03 20:31:04.982 [] INFO  p.e.u.pago.service.PagoServiceImpl - component=pago-service eventType=cita.creada citaId=5 status=PAGO_REGISTRADO pagoId=3 monto=150.00 metodoPago=TARJETA
+2026-10-03 20:31:04.986 [] INFO  p.e.u.pago.kafka.CitaEventosConsumer - component=cita-consumer eventType=cita.creada citaId=7 status=RECIBIDO partition=0 offset=1
+2026-10-03 20:31:04.992 [] INFO  p.e.u.pago.service.PagoServiceImpl - component=pago-service eventType=cita.creada citaId=7 status=PAGO_REGISTRADO pagoId=4 monto=45.00 metodoPago=YAPE
+2026-10-03 20:31:05.000 [] INFO  p.e.u.pago.kafka.PagoEventosProducer - component=pago-producer eventType=pago.validado citaId=6 status=PUBLICADO topic=pago-eventos partition=1 offset=1
+2026-10-03 20:31:05.005 [] INFO  p.e.u.pago.kafka.PagoEventosProducer - component=pago-producer eventType=pago.validado citaId=5 status=PUBLICADO topic=pago-eventos partition=0 offset=0
+2026-10-03 20:31:05.005 [] INFO  p.e.u.pago.kafka.PagoEventosProducer - component=pago-producer eventType=pago.validado citaId=7 status=PUBLICADO topic=pago-eventos partition=0 offset=1
+2026-10-03 20:31:28.956 [] ERROR o.s.k.listener.DefaultErrorHandler - Backoff FixedBackOffExecution[interval=0, currentAttempts=1, maxAttempts=0] exhausted for cita-eventos-0@2
+org.springframework.kafka.listener.ListenerExecutionFailedException: Listener failed
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:3094)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.checkDeser(KafkaMessageListenerContainer.java:3142)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2922)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2837)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:2679)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:2573)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:2204)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeIfHaveRecords(KafkaMessageListenerContainer.java:1559)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1499)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1368)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.springframework.kafka.support.serializer.DeserializationException: failed to deserialize
+	at org.springframework.kafka.support.serializer.SerializationUtils.deserializationException(SerializationUtils.java:164)
+	at org.springframework.kafka.support.serializer.ErrorHandlingDeserializer.deserialize(ErrorHandlingDeserializer.java:220)
+	at org.apache.kafka.common.serialization.Deserializer.deserialize(Deserializer.java:114)
+	at org.apache.kafka.clients.consumer.internals.CompletedFetch.parseRecord(CompletedFetch.java:324)
+	at org.apache.kafka.clients.consumer.internals.CompletedFetch.fetchRecords(CompletedFetch.java:281)
+	at org.apache.kafka.clients.consumer.internals.FetchCollector.fetchRecords(FetchCollector.java:170)
+	at org.apache.kafka.clients.consumer.internals.FetchCollector.collectFetch(FetchCollector.java:133)
+	at org.apache.kafka.clients.consumer.internals.Fetcher.collectFetch(Fetcher.java:146)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.pollForFetches(ClassicKafkaConsumer.java:722)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:646)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:625)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollConsumer(KafkaMessageListenerContainer.java:1720)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doPoll(KafkaMessageListenerContainer.java:1695)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1478)
+	... 3 common frames omitted
+Caused by: org.apache.kafka.common.errors.SerializationException: Can't deserialize data  from topic [cita-eventos]
+	at org.springframework.kafka.support.serializer.JacksonJsonDeserializer.deserialize(JacksonJsonDeserializer.java:596)
+	at org.springframework.kafka.support.serializer.ErrorHandlingDeserializer.deserialize(ErrorHandlingDeserializer.java:217)
+	... 16 common frames omitted
+Caused by: tools.jackson.core.exc.StreamReadException: Unrecognized token 'esto': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: UNKNOWN; byte offset: #0]
+	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1856)
+	at tools.jackson.core.json.UTF8StreamJsonParser._reportInvalidToken(UTF8StreamJsonParser.java:4240)
+	at tools.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:3312)
+	at tools.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:875)
+	at tools.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:761)
+	at tools.jackson.databind.ObjectReader._initForReading(ObjectReader.java:300)
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1875)
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1321)
+	at org.springframework.kafka.support.serializer.JacksonJsonDeserializer.deserialize(JacksonJsonDeserializer.java:593)
+	... 17 common frames omitted
+2026-10-03 20:31:31.007 [] INFO  p.e.u.pago.kafka.CitaEventosConsumer - component=cita-consumer eventType=cita.creada citaId=4 status=RECIBIDO partition=1 offset=2
+2026-10-03 20:31:31.013 [] WARN  p.e.u.pago.service.PagoServiceImpl - component=pago-service eventType=cita.creada citaId=4 status=DUPLICADO pagoId=1
+2026-10-03 20:31:31.026 [] INFO  p.e.u.pago.kafka.PagoEventosProducer - component=pago-producer eventType=pago.validado citaId=4 status=PUBLICADO topic=pago-eventos partition=1 offset=2
+2026-10-03 20:31:33.107 [] INFO  p.e.u.pago.kafka.CitaEventosConsumer - component=cita-consumer eventType=cita.cancelada citaId=8 status=RECIBIDO partition=0 offset=3
+2026-10-03 20:31:33.108 [] INFO  p.e.u.pago.kafka.CitaEventosConsumer - component=cita-consumer eventType=cita.cancelada citaId=8 status=IGNORADO motivo=tipo_no_soportado
+2026-10-03 20:36:03.178 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-03 20:41:03.204 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

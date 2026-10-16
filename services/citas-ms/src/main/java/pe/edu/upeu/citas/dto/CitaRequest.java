@@ -1,6 +1,7 @@
 package pe.edu.upeu.citas.dto;
 
 import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
@@ -36,6 +37,17 @@ public class CitaRequest {
     @DecimalMin(value = "0.01")
     private BigDecimal monto;
 
-    @Pattern(regexp = "TARJETA|YAPE|EFECTIVO", message = "metodoPago debe ser TARJETA, YAPE o EFECTIVO")
+    /**
+     * TARJETA_RECHAZADA (S9) no es un metodo real: es el valor reservado para
+     * simular, de forma determinista, el rechazo de la pasarela de pagos.
+     */
+    @Pattern(regexp = "TARJETA|YAPE|EFECTIVO|TARJETA_RECHAZADA",
+            message = "metodoPago debe ser TARJETA, YAPE, EFECTIVO o TARJETA_RECHAZADA")
     private String metodoPago;
+
+    /** S9 (Parte E): insumo clinico a reservar en veterinaria-mascota-ms (opcional). */
+    private Long insumoId;
+
+    @Min(1)
+    private Integer cantidadInsumo;
 }

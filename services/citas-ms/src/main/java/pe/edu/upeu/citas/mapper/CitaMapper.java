@@ -28,6 +28,8 @@ public class CitaMapper {
                 .estado(cita.getEstado())
                 .monto(cita.getMonto())
                 .metodoPago(cita.getMetodoPago())
+                .insumoId(cita.getInsumoId())
+                .cantidadInsumo(cita.getCantidadInsumo())
                 .build();
     }
 }

@@ -27,11 +27,11 @@ public class PagoEventosConsumer {
         }
         log.info("component=pago-consumer eventType={} citaId={} status=RECIBIDO partition={} offset={}",
                 evento.getTipoEvento(), evento.getCitaId(), record.partition(), record.offset());
-        if (!PagoValidadoEvento.TIPO.equals(evento.getTipoEvento())) {
-            log.info("component=pago-consumer eventType={} citaId={} status=IGNORADO motivo=tipo_no_soportado",
+        switch (evento.getTipoEvento()) {
+            case PagoValidadoEvento.TIPO -> citaService.marcarPagada(evento.getCitaId(), evento.getPagoId());
+            case PagoValidadoEvento.TIPO_FALLIDO -> citaService.compensar(evento.getCitaId(), evento.getPagoId(), evento.getMotivo());
+            case null, default -> log.info("component=pago-consumer eventType={} citaId={} status=IGNORADO motivo=tipo_no_soportado",
                     evento.getTipoEvento(), evento.getCitaId());
-            return;
         }
-        citaService.marcarPagada(evento.getCitaId(), evento.getPagoId());
     }
 }

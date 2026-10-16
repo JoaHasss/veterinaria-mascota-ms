@@ -1,0 +1,253 @@
+2026-10-01 22:56:13.864 [] INFO  p.e.u.a.VeterinariaAuthApplication - Starting VeterinariaAuthApplication using Java 21.0.10 with PID 30372 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-auth-ms\target\classes started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-auth-ms)
+2026-10-01 22:56:13.865 [] DEBUG p.e.u.a.VeterinariaAuthApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-10-01 22:56:13.871 [] INFO  p.e.u.a.VeterinariaAuthApplication - The following 1 profile is active: "dev"
+2026-10-01 22:56:13.962 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-10-01 22:56:13.963 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-auth-ms, profiles=[default], label=null, version=null, state=null
+2026-10-01 22:56:13.963 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-10-01 22:56:13.963 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-auth-ms, profiles=[dev], label=null, version=null, state=null
+2026-10-01 22:56:13.967 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-01 22:56:13.967 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-01 22:56:15.917 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-01 22:56:16.221 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 290 ms. Found 2 JPA repository interfaces.
+2026-10-01 22:56:16.913 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5d2c00c1-be80-3480-8845-5bb0d341ad38
+2026-10-01 22:56:17.803 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8085 (http)
+2026-10-01 22:56:17.844 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-01 22:56:17.845 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-10-01 22:56:17.937 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3967 ms
+2026-10-01 22:56:18.283 [] DEBUG p.e.u.a.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-10-01 22:56:18.580 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-01 22:56:18.819 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2ef80cb1
+2026-10-01 22:56:18.823 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-01 22:56:18.868 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:15435/veterinaria_auth_db (PostgreSQL 16.13)
+2026-10-01 22:56:18.959 [] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "public"."flyway_schema_history" does not exist yet
+2026-10-01 22:56:18.966 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.037s)
+2026-10-01 22:56:19.012 [] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "public"."flyway_schema_history" ...
+2026-10-01 22:56:19.111 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": << Empty Schema >>
+2026-10-01 22:56:19.130 [] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "1 - create usuarios roles"
+2026-10-01 22:56:19.211 [] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema "public", now at version v1 (execution time 00:00.054s)
+2026-10-01 22:56:19.342 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-01 22:56:19.436 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-10-01 22:56:20.470 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-01 22:56:20.648 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:15435/veterinaria_auth_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: veterinaria_auth_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-01 22:56:22.197 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-01 22:56:22.276 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-01 22:56:22.392 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-01 22:56:23.953 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-01 22:56:24.083 [] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2026-10-01 22:56:24.086 [] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-10-01 22:56:25.214 [] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-10-01 22:56:25.374 [] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-10-01 22:56:25.423 [] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-01 22:56:25.429 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-10-01 22:56:25.530 [] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-10-01 22:56:25.555 [] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-10-01 22:56:25.559 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-01 22:56:25.568 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-10-01 22:56:25.569 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-10-01 22:56:25.569 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-10-01 22:56:25.569 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-10-01 22:56:25.569 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-10-01 22:56:25.569 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-10-01 22:56:25.569 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-10-01 22:56:25.874 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-10-01 22:56:25.876 [] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-10-01 22:56:25.878 [] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-10-01 22:56:25.881 [] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1790913385879 with initial instances count: 0
+2026-10-01 22:56:25.888 [] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application VETERINARIA-AUTH-MS with eureka with status UP
+2026-10-01 22:56:25.890 [] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1790913385890, current=UP, previous=STARTING]
+2026-10-01 22:56:25.892 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-AUTH-MS/veterinaria-auth-ms:8085: registering service...
+2026-10-01 22:56:25.925 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/'
+2026-10-01 22:56:25.926 [] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8085
+2026-10-01 22:56:25.938 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-AUTH-MS/veterinaria-auth-ms:8085 - registration status: 204
+2026-10-01 22:56:25.944 [] INFO  p.e.u.a.VeterinariaAuthApplication - Started VeterinariaAuthApplication in 14.131 seconds (process running for 15.329)
+2026-10-01 22:56:26.020 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-01 22:56:26.020 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-01 22:56:26.159 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-01 22:56:26.159 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-01 22:56:26.163 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-10-01 22:56:33.756 [6703aaac-edc1-4325-84fd-5e32b3d28f52] INFO  p.edu.upeu.auth.service.AuthService - Token emitido para cliente@veterinaria.com (roles=[CLIENTE], idCliente=1)
+2026-10-01 22:56:33.934 [63acf36a-ce09-48f1-9cbf-68694f5cf823] WARN  p.edu.upeu.auth.service.AuthService - Login fallido para cliente@veterinaria.com: BadCredentialsException
+2026-10-01 22:56:33.940 [63acf36a-ce09-48f1-9cbf-68694f5cf823] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [pe.edu.upeu.auth.exception.InvalidCredentialsException: Email o contraseña inválidos]
+2026-10-01 22:56:55.883 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-10-01 22:56:55.884 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-10-01 22:56:55.884 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-10-01 22:56:55.884 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-10-01 22:56:55.884 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-10-01 22:56:55.884 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2026-10-01 22:56:55.884 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-10-01 22:56:55.933 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-10-01 22:58:14.274 [697d32e5-6d69-47da-a1b4-6313ebdf2e03] INFO  p.edu.upeu.auth.service.AuthService - Token emitido para cliente@veterinaria.com (roles=[CLIENTE], idCliente=1)
+2026-10-01 22:58:14.819 [4efd9038-63ef-4f5e-9e81-3811e002578e] WARN  p.edu.upeu.auth.service.AuthService - Login fallido para cliente@veterinaria.com: BadCredentialsException
+2026-10-01 22:58:14.823 [4efd9038-63ef-4f5e-9e81-3811e002578e] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [pe.edu.upeu.auth.exception.InvalidCredentialsException: Email o contraseña inválidos]
+2026-10-01 22:58:15.274 [215f46b5-c387-410f-b498-21a02418dc29] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<pe.edu.upeu.auth.dto.LoginResponse> pe.edu.upeu.auth.controller.AuthController.login(pe.edu.upeu.auth.dto.LoginRequest) with 2 errors: [Field error in object 'loginRequest' on field 'password': rejected value []; codes [NotBlank.loginRequest.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginRequest.password,password]; arguments []; default message [password]]; default message [no debe estar vacío]] [Field error in object 'loginRequest' on field 'email': rejected value [no-es-email]; codes [Email.loginRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@461b2b4f,.*]; default message [debe ser una dirección de correo electrónico con formato correcto]] ]
+2026-10-01 22:58:16.110 [7bb3c5cd-4c8d-4686-95bb-9a81eadc90f6] INFO  p.edu.upeu.auth.service.AuthService - Usuario registrado: nuevo1790913495@veterinaria.com con rol CLIENTE
+2026-10-01 22:58:16.650 [7c2cf8e2-347c-4395-aeba-a459d3cd9cb2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: El email ya está registrado]
+2026-10-01 22:58:17.608 [b96d320d-8d4e-4c86-9eea-87c29effe2c2] INFO  p.edu.upeu.auth.service.AuthService - Token emitido para cliente@veterinaria.com (roles=[CLIENTE], idCliente=1)
+2026-10-01 22:58:17.823 [bb362e28-a27c-4723-b01b-3fe7f36a38f7] INFO  p.edu.upeu.auth.service.AuthService - Token emitido para cliente2@veterinaria.com (roles=[CLIENTE], idCliente=2)
+2026-10-01 22:58:18.003 [f2287186-e20f-4432-a29b-74bfefe90a7b] INFO  p.edu.upeu.auth.service.AuthService - Token emitido para admin@veterinaria.com (roles=[ADMIN], idCliente=null)
+2026-10-01 22:58:57.386 [] INFO  p.e.u.a.VeterinariaAuthApplication - Starting VeterinariaAuthApplication using Java 21.0.10 with PID 34800 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-auth-ms\target\classes started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-auth-ms)
+2026-10-01 22:58:57.389 [] DEBUG p.e.u.a.VeterinariaAuthApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-10-01 22:58:57.390 [] INFO  p.e.u.a.VeterinariaAuthApplication - The following 1 profile is active: "dev"
+2026-10-01 22:58:57.451 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-10-01 22:58:57.451 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-auth-ms, profiles=[default], label=null, version=null, state=null
+2026-10-01 22:58:57.453 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-10-01 22:58:57.453 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-auth-ms, profiles=[dev], label=null, version=null, state=null
+2026-10-01 22:58:57.457 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-01 22:58:57.457 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-01 22:58:58.885 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-01 22:58:59.129 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 225 ms. Found 2 JPA repository interfaces.
+2026-10-01 22:58:59.644 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5d2c00c1-be80-3480-8845-5bb0d341ad38
+2026-10-01 22:59:00.382 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8085 (http)
+2026-10-01 22:59:00.403 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-01 22:59:00.403 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-10-01 22:59:00.491 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3033 ms
+2026-10-01 22:59:00.766 [] DEBUG p.e.u.a.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-10-01 22:59:01.043 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-01 22:59:01.245 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@591ceac9
+2026-10-01 22:59:01.248 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-01 22:59:01.298 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:15435/veterinaria_auth_db (PostgreSQL 16.13)
+2026-10-01 22:59:01.401 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.055s)
+2026-10-01 22:59:01.428 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+2026-10-01 22:59:01.434 [] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-10-01 22:59:01.598 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-01 22:59:01.726 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-10-01 22:59:02.591 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-01 22:59:02.772 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:15435/veterinaria_auth_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: veterinaria_auth_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-01 22:59:04.045 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-01 22:59:04.112 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-01 22:59:04.234 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-01 22:59:06.224 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-01 22:59:06.326 [] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2026-10-01 22:59:06.327 [] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-10-01 22:59:07.133 [] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-10-01 22:59:07.263 [] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-10-01 22:59:07.301 [] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-01 22:59:07.308 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-10-01 22:59:07.416 [] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-10-01 22:59:07.444 [] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-10-01 22:59:07.450 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-01 22:59:07.478 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-10-01 22:59:07.478 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-10-01 22:59:07.478 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-10-01 22:59:07.478 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-10-01 22:59:07.478 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-10-01 22:59:07.479 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-10-01 22:59:07.479 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-10-01 22:59:07.776 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-10-01 22:59:07.794 [] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-10-01 22:59:07.796 [] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-10-01 22:59:07.797 [] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1790913547797 with initial instances count: 5
+2026-10-01 22:59:07.801 [] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application VETERINARIA-AUTH-MS with eureka with status UP
+2026-10-01 22:59:07.801 [] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1790913547801, current=UP, previous=STARTING]
+2026-10-01 22:59:07.803 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-AUTH-MS/veterinaria-auth-ms:8085: registering service...
+2026-10-01 22:59:07.829 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/'
+2026-10-01 22:59:07.831 [] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8085
+2026-10-01 22:59:07.838 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-AUTH-MS/veterinaria-auth-ms:8085 - registration status: 204
+2026-10-01 22:59:07.853 [] INFO  p.e.u.a.VeterinariaAuthApplication - Started VeterinariaAuthApplication in 12.133 seconds (process running for 12.998)
+2026-10-01 22:59:07.938 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-01 22:59:07.938 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-01 22:59:07.974 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-01 22:59:07.974 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-01 22:59:07.976 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-10-01 22:59:09.204 [10c351fa-23a5-42eb-b5e6-988fae76744f] INFO  p.edu.upeu.auth.service.AuthService - Token emitido para cliente@veterinaria.com (roles=[CLIENTE], idCliente=1)
+2026-10-01 23:00:56.073 [] INFO  p.e.u.a.VeterinariaAuthApplication - Starting VeterinariaAuthApplication using Java 21.0.10 with PID 5452 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-auth-ms\target\classes started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-auth-ms)
+2026-10-01 23:00:56.075 [] DEBUG p.e.u.a.VeterinariaAuthApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-10-01 23:00:56.078 [] INFO  p.e.u.a.VeterinariaAuthApplication - The following 1 profile is active: "dev"
+2026-10-01 23:00:56.126 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-10-01 23:00:56.127 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-auth-ms, profiles=[default], label=null, version=null, state=null
+2026-10-01 23:00:56.127 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-10-01 23:00:56.127 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-auth-ms, profiles=[dev], label=null, version=null, state=null
+2026-10-01 23:00:56.130 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-01 23:00:56.130 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-01 23:00:57.424 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-01 23:00:57.628 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 192 ms. Found 2 JPA repository interfaces.
+2026-10-01 23:00:58.028 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5d2c00c1-be80-3480-8845-5bb0d341ad38
+2026-10-01 23:00:58.680 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8085 (http)
+2026-10-01 23:00:58.700 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-01 23:00:58.700 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-10-01 23:00:58.773 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2640 ms
+2026-10-01 23:00:58.987 [] DEBUG p.e.u.a.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-10-01 23:00:59.207 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-01 23:00:59.386 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@446c6c94
+2026-10-01 23:00:59.387 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-01 23:00:59.436 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:15435/veterinaria_auth_db (PostgreSQL 16.13)
+2026-10-01 23:00:59.519 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.044s)
+2026-10-01 23:00:59.540 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+2026-10-01 23:00:59.544 [] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-10-01 23:00:59.669 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-01 23:00:59.764 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-10-01 23:01:00.463 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-01 23:01:00.599 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:15435/veterinaria_auth_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: veterinaria_auth_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-01 23:01:01.923 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-01 23:01:01.979 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-01 23:01:02.079 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-01 23:01:05.485 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-01 23:01:05.556 [] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2026-10-01 23:01:05.557 [] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-10-01 23:01:06.485 [] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-10-01 23:01:06.594 [] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-10-01 23:01:06.629 [] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-01 23:01:06.634 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-10-01 23:01:06.701 [] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-10-01 23:01:06.724 [] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-10-01 23:01:06.727 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-01 23:01:06.735 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-10-01 23:01:06.735 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-10-01 23:01:06.737 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-10-01 23:01:06.737 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-10-01 23:01:06.737 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-10-01 23:01:06.737 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-10-01 23:01:06.737 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-10-01 23:01:07.039 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-10-01 23:01:07.041 [] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-10-01 23:01:07.043 [] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-10-01 23:01:07.044 [] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1790913667044 with initial instances count: 5
+2026-10-01 23:01:07.049 [] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application VETERINARIA-AUTH-MS with eureka with status UP
+2026-10-01 23:01:07.049 [] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1790913667049, current=UP, previous=STARTING]
+2026-10-01 23:01:07.051 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-AUTH-MS/veterinaria-auth-ms:8085: registering service...
+2026-10-01 23:01:07.080 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/'
+2026-10-01 23:01:07.081 [] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8085
+2026-10-01 23:01:07.089 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-AUTH-MS/veterinaria-auth-ms:8085 - registration status: 204
+2026-10-01 23:01:07.099 [] INFO  p.e.u.a.VeterinariaAuthApplication - Started VeterinariaAuthApplication in 12.401 seconds (process running for 13.183)
+2026-10-01 23:01:07.195 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-01 23:01:07.195 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-01 23:01:07.284 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-01 23:01:07.284 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-01 23:01:07.286 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-10-01 23:01:08.377 [cd1d1d97-056a-4bcf-9664-4ffc803f16a8] INFO  p.edu.upeu.auth.service.AuthService - Token emitido para cliente@veterinaria.com (roles=[CLIENTE], idCliente=1)
+2026-10-01 23:01:28.244 [0300774b-c773-4cbb-a34e-3d31fde63b8e] INFO  p.edu.upeu.auth.service.AuthService - Token emitido para cliente2@veterinaria.com (roles=[], idCliente=2)
+2026-10-01 23:01:29.093 [cff3e402-ac93-4820-b736-9e4f907453dc] INFO  p.edu.upeu.auth.service.AuthService - Token emitido para cliente2@veterinaria.com (roles=[CLIENTE], idCliente=2)
+2026-10-01 23:06:06.748 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

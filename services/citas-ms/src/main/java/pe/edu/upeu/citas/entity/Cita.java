@@ -42,4 +42,10 @@ public class Cita {
 
     @Column(name = "metodo_pago", length = 20)
     private String metodoPago;
+
+    @Column(name = "insumo_id")
+    private Long insumoId;
+
+    @Column(name = "cantidad_insumo")
+    private Integer cantidadInsumo;
 }

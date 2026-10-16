@@ -1,0 +1,236 @@
+2026-09-30 23:23:02.590 [] INFO  p.e.u.v.VeterinariaApplication - Starting VeterinariaApplication using Java 21.0.10 with PID 23104 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-mascota-ms\target\classes started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-mascota-ms)
+2026-09-30 23:23:02.600 [] DEBUG p.e.u.v.VeterinariaApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-09-30 23:23:02.603 [] INFO  p.e.u.v.VeterinariaApplication - The following 1 profile is active: "dev"
+2026-09-30 23:23:02.673 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-09-30 23:23:02.674 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-mascota-ms, profiles=[default], label=null, version=null, state=null
+2026-09-30 23:23:02.676 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-09-30 23:23:02.676 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-mascota-ms, profiles=[dev], label=null, version=null, state=null
+2026-09-30 23:23:02.679 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-30 23:23:02.679 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-30 23:23:04.307 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-30 23:23:04.527 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 202 ms. Found 2 JPA repository interfaces.
+2026-09-30 23:23:04.957 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ae1e70d6-4a1c-32ed-a079-b3aff438aca1
+2026-09-30 23:23:05.841 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-30 23:23:05.870 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-30 23:23:05.871 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-30 23:23:05.973 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3291 ms
+2026-09-30 23:23:06.331 [] DEBUG p.e.u.v.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-09-30 23:23:06.634 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-30 23:23:06.905 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a2a1986
+2026-09-30 23:23:06.908 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-30 23:23:06.952 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:25432/veterinaria_mascota_db (PostgreSQL 16.13)
+2026-09-30 23:23:07.041 [] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "public"."flyway_schema_history" does not exist yet
+2026-09-30 23:23:07.048 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.042s)
+2026-09-30 23:23:07.082 [] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "public"."flyway_schema_history" ...
+2026-09-30 23:23:07.169 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": << Empty Schema >>
+2026-09-30 23:23:07.186 [] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "1 - create menu tables"
+2026-09-30 23:23:07.267 [] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema "public", now at version v1 (execution time 00:00.042s)
+2026-09-30 23:23:07.440 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-30 23:23:07.573 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-09-30 23:23:08.554 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-30 23:23:08.744 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:25432/veterinaria_mascota_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: veterinaria_mascota_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-30 23:23:10.361 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-30 23:23:10.443 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-30 23:23:10.586 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-30 23:23:11.939 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-30 23:23:12.790 [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-09-30 23:23:12.943 [] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-09-30 23:23:12.989 [] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-30 23:23:12.998 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-09-30 23:23:13.124 [] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-09-30 23:23:13.163 [] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-09-30 23:23:13.170 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-30 23:23:13.184 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-09-30 23:23:13.184 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-09-30 23:23:13.184 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-09-30 23:23:13.184 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-09-30 23:23:13.184 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-09-30 23:23:13.184 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-09-30 23:23:13.184 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-09-30 23:23:13.681 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-09-30 23:23:13.685 [] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-09-30 23:23:13.690 [] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-30 23:23:13.692 [] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1790828593691 with initial instances count: 0
+2026-09-30 23:23:13.699 [] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application VETERINARIA-MASCOTA-MS with eureka with status UP
+2026-09-30 23:23:13.700 [] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1790828593700, current=UP, previous=STARTING]
+2026-09-30 23:23:13.703 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-MASCOTA-MS/veterinaria-mascota-ms:8080: registering service...
+2026-09-30 23:23:13.744 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-30 23:23:13.745 [] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2026-09-30 23:23:13.769 [] INFO  p.e.u.v.VeterinariaApplication - Started VeterinariaApplication in 13.243 seconds (process running for 14.41)
+2026-09-30 23:23:13.888 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-30 23:23:13.889 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-30 23:23:13.909 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-MASCOTA-MS/veterinaria-mascota-ms:8080 - registration status: 204
+2026-09-30 23:23:38.058 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-30 23:23:38.058 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-30 23:23:38.062 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-09-30 23:23:43.692 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-09-30 23:23:43.692 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-09-30 23:23:43.692 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-09-30 23:23:43.692 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-09-30 23:23:43.692 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-09-30 23:23:43.692 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2026-09-30 23:23:43.693 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-09-30 23:23:43.751 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-09-30 23:24:57.477 [36027639-a565-4ef9-a8ee-300782114854] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public pe.edu.upeu.veterinaria.dto.MascotaResponse pe.edu.upeu.veterinaria.controller.MascotaController.crear(pe.edu.upeu.veterinaria.dto.MascotaRequest): [Field error in object 'mascotaRequest' on field 'especieId': rejected value [null]; codes [NotNull.mascotaRequest.especieId,NotNull.especieId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mascotaRequest.especieId,especieId]; arguments []; default message [especieId]]; default message [no debe ser nulo]] ]
+2026-09-30 23:28:07.825 [] INFO  p.e.u.v.VeterinariaApplication - Starting VeterinariaApplication using Java 21.0.10 with PID 5044 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-mascota-ms\target\classes started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-mascota-ms)
+2026-09-30 23:28:07.829 [] DEBUG p.e.u.v.VeterinariaApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-09-30 23:28:07.831 [] INFO  p.e.u.v.VeterinariaApplication - The following 1 profile is active: "dev"
+2026-09-30 23:28:07.919 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-09-30 23:28:07.919 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-mascota-ms, profiles=[default], label=null, version=null, state=null
+2026-09-30 23:28:07.920 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-09-30 23:28:07.921 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-mascota-ms, profiles=[dev], label=null, version=null, state=null
+2026-09-30 23:28:07.923 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-30 23:28:07.924 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-30 23:28:09.498 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-30 23:28:09.700 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 189 ms. Found 2 JPA repository interfaces.
+2026-09-30 23:28:10.112 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ae1e70d6-4a1c-32ed-a079-b3aff438aca1
+2026-09-30 23:28:10.890 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-30 23:28:10.920 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-30 23:28:10.921 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-30 23:28:11.024 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3098 ms
+2026-09-30 23:28:11.394 [] DEBUG p.e.u.v.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-09-30 23:28:11.668 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-30 23:28:11.895 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2bbdd683
+2026-09-30 23:28:11.897 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-30 23:28:11.940 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:25432/veterinaria_mascota_db (PostgreSQL 16.13)
+2026-09-30 23:28:12.043 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.053s)
+2026-09-30 23:28:12.078 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+2026-09-30 23:28:12.084 [] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-09-30 23:28:12.239 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-30 23:28:12.344 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-09-30 23:28:13.225 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-30 23:28:13.390 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:25432/veterinaria_mascota_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: veterinaria_mascota_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-30 23:28:14.987 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-30 23:28:15.075 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-30 23:28:15.214 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-30 23:28:16.563 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-30 23:28:17.399 [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-09-30 23:28:17.554 [] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-09-30 23:28:17.604 [] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-30 23:28:17.612 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-09-30 23:28:17.727 [] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-09-30 23:28:17.764 [] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-09-30 23:28:17.769 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-30 23:28:17.783 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-09-30 23:28:17.783 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-09-30 23:28:17.783 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-09-30 23:28:17.784 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-09-30 23:28:17.784 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-09-30 23:28:17.784 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-09-30 23:28:17.784 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-09-30 23:28:18.284 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-09-30 23:28:18.290 [] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-09-30 23:28:18.293 [] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-30 23:28:18.295 [] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1790828898294 with initial instances count: 2
+2026-09-30 23:28:18.303 [] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application VETERINARIA-MASCOTA-MS with eureka with status UP
+2026-09-30 23:28:18.303 [] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1790828898303, current=UP, previous=STARTING]
+2026-09-30 23:28:18.305 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-MASCOTA-MS/veterinaria-mascota-ms:8080: registering service...
+2026-09-30 23:28:18.342 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-30 23:28:18.344 [] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2026-09-30 23:28:18.350 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-MASCOTA-MS/veterinaria-mascota-ms:8080 - registration status: 204
+2026-09-30 23:28:18.367 [] INFO  p.e.u.v.VeterinariaApplication - Started VeterinariaApplication in 12.387 seconds (process running for 13.538)
+2026-09-30 23:28:18.484 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-30 23:28:18.484 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-30 23:28:22.249 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-30 23:28:22.249 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-30 23:28:22.253 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-09-30 23:29:18.169 [demo-trace-happy] INFO  p.e.u.v.controller.MascotaController - Solicitud recibida (posiblemente desde citas-ms vía Feign) para mascotaId=1
+2026-09-30 23:31:22.372 [] INFO  p.e.u.v.VeterinariaApplication - Starting VeterinariaApplication using Java 21.0.10 with PID 36068 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-mascota-ms\target\classes started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-mascota-ms)
+2026-09-30 23:31:22.374 [] DEBUG p.e.u.v.VeterinariaApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-09-30 23:31:22.378 [] INFO  p.e.u.v.VeterinariaApplication - The following 1 profile is active: "dev"
+2026-09-30 23:31:22.440 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-09-30 23:31:22.440 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-mascota-ms, profiles=[default], label=null, version=null, state=null
+2026-09-30 23:31:22.442 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-09-30 23:31:22.442 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-mascota-ms, profiles=[dev], label=null, version=null, state=null
+2026-09-30 23:31:22.447 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-30 23:31:22.447 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-30 23:31:23.954 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-30 23:31:24.178 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 200 ms. Found 2 JPA repository interfaces.
+2026-09-30 23:31:24.602 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ae1e70d6-4a1c-32ed-a079-b3aff438aca1
+2026-09-30 23:31:25.339 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-30 23:31:25.364 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-30 23:31:25.364 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-30 23:31:25.462 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3015 ms
+2026-09-30 23:31:25.817 [] DEBUG p.e.u.v.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-09-30 23:31:26.189 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-30 23:31:26.433 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@197540c3
+2026-09-30 23:31:26.437 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-30 23:31:26.486 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:25432/veterinaria_mascota_db (PostgreSQL 16.13)
+2026-09-30 23:31:26.597 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.051s)
+2026-09-30 23:31:26.633 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+2026-09-30 23:31:26.641 [] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-09-30 23:31:26.812 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-30 23:31:26.900 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-09-30 23:31:27.741 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-30 23:31:27.925 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:25432/veterinaria_mascota_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: veterinaria_mascota_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-30 23:31:29.385 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-30 23:31:29.462 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-30 23:31:29.591 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-30 23:31:30.802 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-30 23:31:31.708 [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-09-30 23:31:31.866 [] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-09-30 23:31:31.915 [] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-30 23:31:31.919 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-09-30 23:31:32.019 [] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-09-30 23:31:32.053 [] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-09-30 23:31:32.063 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-30 23:31:32.078 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-09-30 23:31:32.079 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-09-30 23:31:32.079 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-09-30 23:31:32.079 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-09-30 23:31:32.079 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-09-30 23:31:32.079 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-09-30 23:31:32.079 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-09-30 23:31:32.483 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-09-30 23:31:32.491 [] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-09-30 23:31:32.491 [] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-30 23:31:32.497 [] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1790829092491 with initial instances count: 2
+2026-09-30 23:31:32.497 [] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application VETERINARIA-MASCOTA-MS with eureka with status UP
+2026-09-30 23:31:32.497 [] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1790829092497, current=UP, previous=STARTING]
+2026-09-30 23:31:32.497 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-MASCOTA-MS/veterinaria-mascota-ms:8080: registering service...
+2026-09-30 23:31:32.532 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-30 23:31:32.532 [] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2026-09-30 23:31:32.545 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-MASCOTA-MS/veterinaria-mascota-ms:8080 - registration status: 204
+2026-09-30 23:31:32.550 [] INFO  p.e.u.v.VeterinariaApplication - Started VeterinariaApplication in 12.014 seconds (process running for 13.018)
+2026-09-30 23:31:32.675 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-30 23:31:32.675 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-30 23:31:37.218 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-30 23:31:37.221 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-30 23:31:37.223 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-09-30 23:31:54.562 [demo-trace-recovery] INFO  p.e.u.v.controller.MascotaController - Solicitud recibida (posiblemente desde citas-ms vía Feign) para mascotaId=1
+2026-09-30 23:32:05.599 [demo-trace-recovery-2] INFO  p.e.u.v.controller.MascotaController - Solicitud recibida (posiblemente desde citas-ms vía Feign) para mascotaId=1
+2026-09-30 23:32:05.725 [demo-trace-recovery-3] INFO  p.e.u.v.controller.MascotaController - Solicitud recibida (posiblemente desde citas-ms vía Feign) para mascotaId=1
+2026-09-30 23:36:32.104 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

@@ -1,0 +1,251 @@
+2026-09-30 23:23:50.706 [] INFO  pe.edu.upeu.citas.CitasApplication - Starting CitasApplication using Java 21.0.10 with PID 23952 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\citas-ms\target\classes started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\citas-ms)
+2026-09-30 23:23:50.717 [] DEBUG pe.edu.upeu.citas.CitasApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-09-30 23:23:50.719 [] INFO  pe.edu.upeu.citas.CitasApplication - The following 1 profile is active: "dev"
+2026-09-30 23:23:50.833 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-09-30 23:23:50.834 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=citas-ms, profiles=[default], label=null, version=null, state=null
+2026-09-30 23:23:50.836 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-09-30 23:23:50.838 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=citas-ms, profiles=[dev], label=null, version=null, state=null
+2026-09-30 23:23:50.843 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-30 23:23:50.843 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-30 23:23:53.897 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-30 23:23:54.336 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 409 ms. Found 1 JPA repository interface.
+2026-09-30 23:23:55.450 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e1993b25-6b8c-3774-9b3e-212f2be98502
+2026-09-30 23:23:57.734 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8095 (http)
+2026-09-30 23:23:57.777 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-30 23:23:57.778 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-30 23:23:57.954 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 7108 ms
+2026-09-30 23:23:58.846 [] DEBUG p.e.u.c.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-09-30 23:23:59.431 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-30 23:23:59.805 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@234f102
+2026-09-30 23:23:59.809 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-30 23:23:59.884 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:25433/veterinaria_citas_db (PostgreSQL 16.13)
+2026-09-30 23:24:00.035 [] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "public"."flyway_schema_history" does not exist yet
+2026-09-30 23:24:00.043 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.072s)
+2026-09-30 23:24:00.081 [] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "public"."flyway_schema_history" ...
+2026-09-30 23:24:00.189 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": << Empty Schema >>
+2026-09-30 23:24:00.208 [] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "1 - create citas tables"
+2026-09-30 23:24:00.286 [] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "2 - add mascota nombre to citas"
+2026-09-30 23:24:00.336 [] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema "public", now at version v2 (execution time 00:00.047s)
+2026-09-30 23:24:00.690 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-30 23:24:00.874 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-09-30 23:24:02.364 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-30 23:24:02.644 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:25433/veterinaria_citas_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: veterinaria_citas_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-30 23:24:05.088 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-30 23:24:05.190 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-30 23:24:05.928 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-30 23:24:06.138 [] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-09-30 23:24:06.387 [] INFO  o.s.c.o.FeignClientFactoryBean - For 'veterinaria-mascota-ms' URL not provided. Will try picking an instance via load-balancing.
+2026-09-30 23:24:06.995 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-30 23:24:09.844 [] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-09-30 23:24:09.933 [] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-30 23:24:09.955 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 5 endpoints beneath base path '/actuator'
+2026-09-30 23:24:10.015 [] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-09-30 23:24:10.034 [] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-09-30 23:24:10.034 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-30 23:24:10.048 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-09-30 23:24:10.048 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-09-30 23:24:10.048 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-09-30 23:24:10.048 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-09-30 23:24:10.048 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-09-30 23:24:10.048 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-09-30 23:24:10.048 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-09-30 23:24:10.278 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-09-30 23:24:10.280 [] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-09-30 23:24:10.280 [] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-30 23:24:10.285 [] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1790828650280 with initial instances count: 1
+2026-09-30 23:24:10.297 [] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CITAS-MS with eureka with status UP
+2026-09-30 23:24:10.297 [] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1790828650297, current=UP, previous=STARTING]
+2026-09-30 23:24:10.299 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CITAS-MS/citas-ms:8095: registering service...
+2026-09-30 23:24:10.327 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CITAS-MS/citas-ms:8095 - registration status: 204
+2026-09-30 23:24:10.333 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8095 (http) with context path '/'
+2026-09-30 23:24:10.335 [] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8095
+2026-09-30 23:24:10.348 [] INFO  pe.edu.upeu.citas.CitasApplication - Started CitasApplication in 22.488 seconds (process running for 24.287)
+2026-09-30 23:24:10.432 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-30 23:24:10.432 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-30 23:24:44.831 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-30 23:24:44.831 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-30 23:24:44.839 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2026-09-30 23:28:55.637 [] INFO  pe.edu.upeu.citas.CitasApplication - Starting CitasApplication using Java 21.0.10 with PID 24568 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\citas-ms\target\classes started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\citas-ms)
+2026-09-30 23:28:55.641 [] DEBUG pe.edu.upeu.citas.CitasApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-09-30 23:28:55.645 [] INFO  pe.edu.upeu.citas.CitasApplication - The following 1 profile is active: "dev"
+2026-09-30 23:28:55.723 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-09-30 23:28:55.723 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=citas-ms, profiles=[default], label=null, version=null, state=null
+2026-09-30 23:28:55.724 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-09-30 23:28:55.724 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=citas-ms, profiles=[dev], label=null, version=null, state=null
+2026-09-30 23:28:55.728 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-30 23:28:55.728 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-30 23:28:57.501 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-30 23:28:57.717 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 203 ms. Found 1 JPA repository interface.
+2026-09-30 23:28:58.376 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=40a5ad58-5ada-3e54-9606-8dcfa20c448a
+2026-09-30 23:28:59.618 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8095 (http)
+2026-09-30 23:28:59.642 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-30 23:28:59.643 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-30 23:28:59.740 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4010 ms
+2026-09-30 23:29:00.225 [] DEBUG p.e.u.c.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-09-30 23:29:00.622 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-30 23:29:00.834 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3da18c97
+2026-09-30 23:29:00.834 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-30 23:29:00.872 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:25433/veterinaria_citas_db (PostgreSQL 16.13)
+2026-09-30 23:29:00.983 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.055s)
+2026-09-30 23:29:01.018 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2
+2026-09-30 23:29:01.022 [] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-09-30 23:29:01.253 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-30 23:29:01.357 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-09-30 23:29:02.176 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-30 23:29:02.327 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:25433/veterinaria_citas_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: veterinaria_citas_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-30 23:29:03.794 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-30 23:29:03.875 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-30 23:29:04.306 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-30 23:29:04.448 [] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-09-30 23:29:04.578 [] INFO  o.s.c.o.FeignClientFactoryBean - For 'veterinaria-mascota-ms' URL not provided. Will try picking an instance via load-balancing.
+2026-09-30 23:29:05.046 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-30 23:29:08.024 [] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-09-30 23:29:08.170 [] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-30 23:29:08.218 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 5 endpoints beneath base path '/actuator'
+2026-09-30 23:29:08.346 [] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-09-30 23:29:08.390 [] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-09-30 23:29:08.397 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-30 23:29:08.410 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-09-30 23:29:08.410 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-09-30 23:29:08.412 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-09-30 23:29:08.412 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-09-30 23:29:08.412 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-09-30 23:29:08.412 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-09-30 23:29:08.412 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-09-30 23:29:08.813 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-09-30 23:29:08.826 [] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-09-30 23:29:08.829 [] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-30 23:29:08.832 [] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1790828948830 with initial instances count: 2
+2026-09-30 23:29:08.846 [] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CITAS-MS with eureka with status UP
+2026-09-30 23:29:08.846 [] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1790828948846, current=UP, previous=STARTING]
+2026-09-30 23:29:08.846 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CITAS-MS/citas-ms:8095: registering service...
+2026-09-30 23:29:08.880 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8095 (http) with context path '/'
+2026-09-30 23:29:08.880 [] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8095
+2026-09-30 23:29:08.898 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CITAS-MS/citas-ms:8095 - registration status: 204
+2026-09-30 23:29:08.913 [] INFO  pe.edu.upeu.citas.CitasApplication - Started CitasApplication in 15.066 seconds (process running for 16.126)
+2026-09-30 23:29:09.000 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-30 23:29:09.004 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-30 23:29:14.795 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-30 23:29:14.795 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-30 23:29:14.798 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-09-30 23:29:18.011 [demo-trace-happy] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para mascotaId=1, consultando veterinaria-mascota-ms...
+2026-09-30 23:29:18.024 [demo-trace-happy] INFO  p.e.u.c.client.MascotaClientService - Consultando veterinaria-mascota-ms para mascotaId=1 (circuit breaker CLOSED/HALF_OPEN)
+2026-09-30 23:29:18.026 [demo-trace-happy] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> GET http://veterinaria-mascota-ms/api/v1/mascotas/1 HTTP/1.1
+2026-09-30 23:29:18.026 [demo-trace-happy] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] X-Trace-ID: demo-trace-happy
+2026-09-30 23:29:18.026 [demo-trace-happy] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> END HTTP (0-byte body)
+2026-09-30 23:29:18.325 [demo-trace-happy] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- HTTP/1.1 200 (299ms)
+2026-09-30 23:29:18.325 [demo-trace-happy] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] connection: keep-alive
+2026-09-30 23:29:18.325 [demo-trace-happy] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-length: 142
+2026-09-30 23:29:18.325 [demo-trace-happy] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-type: application/json
+2026-09-30 23:29:18.325 [demo-trace-happy] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] date: Thu, 01 Oct 2026 04:29:18 GMT
+2026-09-30 23:29:18.325 [demo-trace-happy] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] keep-alive: timeout=60
+2026-09-30 23:29:18.325 [demo-trace-happy] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] x-trace-id: demo-trace-happy
+2026-09-30 23:29:18.325 [demo-trace-happy] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- END HTTP (142-byte body)
+2026-09-30 23:29:18.343 [demo-trace-happy] INFO  p.e.u.c.client.MascotaClientService - Respuesta de veterinaria-mascota-ms para mascotaId=1: nombre='Firulais', activo=true
+2026-09-30 23:29:18.485 [demo-trace-happy] INFO  p.edu.upeu.citas.service.CitaService - Cita 2 creada con mascotaNombre='Firulais' y estado='PROGRAMADA'
+2026-09-30 23:30:13.357 [demo-trace-fail-1] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para mascotaId=1, consultando veterinaria-mascota-ms...
+2026-09-30 23:30:13.357 [demo-trace-fail-1] INFO  p.e.u.c.client.MascotaClientService - Consultando veterinaria-mascota-ms para mascotaId=1 (circuit breaker CLOSED/HALF_OPEN)
+2026-09-30 23:30:13.357 [demo-trace-fail-1] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> GET http://veterinaria-mascota-ms/api/v1/mascotas/1 HTTP/1.1
+2026-09-30 23:30:13.357 [demo-trace-fail-1] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] X-Trace-ID: demo-trace-fail-1
+2026-09-30 23:30:13.357 [demo-trace-fail-1] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> END HTTP (0-byte body)
+2026-09-30 23:30:15.387 [demo-trace-fail-1] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- ERROR ConnectException: Connection refused: getsockopt (2030ms)
+2026-09-30 23:30:15.395 [demo-trace-fail-1] WARN  p.e.u.c.client.MascotaClientService - Circuit breaker 'mascotaService' activo. No se pudo consultar la mascota 1: feign.RetryableException: Connection refused: getsockopt executing GET http://veterinaria-mascota-ms/api/v1/mascotas/1
+2026-09-30 23:30:15.415 [demo-trace-fail-1] INFO  p.edu.upeu.citas.service.CitaService - Cita 3 creada con mascotaNombre='Pendiente de validación (servicio de mascotas no disponible)' y estado='PENDIENTE_VALIDACION'
+2026-09-30 23:30:15.530 [demo-trace-fail-2] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para mascotaId=1, consultando veterinaria-mascota-ms...
+2026-09-30 23:30:15.530 [demo-trace-fail-2] INFO  p.e.u.c.client.MascotaClientService - Consultando veterinaria-mascota-ms para mascotaId=1 (circuit breaker CLOSED/HALF_OPEN)
+2026-09-30 23:30:15.530 [demo-trace-fail-2] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> GET http://veterinaria-mascota-ms/api/v1/mascotas/1 HTTP/1.1
+2026-09-30 23:30:15.530 [demo-trace-fail-2] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] X-Trace-ID: demo-trace-fail-2
+2026-09-30 23:30:15.530 [demo-trace-fail-2] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> END HTTP (0-byte body)
+2026-09-30 23:30:17.563 [demo-trace-fail-2] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- ERROR ConnectException: Connection refused: getsockopt (2027ms)
+2026-09-30 23:30:17.563 [demo-trace-fail-2] WARN  p.e.u.c.client.MascotaClientService - Circuit breaker 'mascotaService' activo. No se pudo consultar la mascota 1: feign.RetryableException: Connection refused: getsockopt executing GET http://veterinaria-mascota-ms/api/v1/mascotas/1
+2026-09-30 23:30:17.582 [demo-trace-fail-2] INFO  p.edu.upeu.citas.service.CitaService - Cita 4 creada con mascotaNombre='Pendiente de validación (servicio de mascotas no disponible)' y estado='PENDIENTE_VALIDACION'
+2026-09-30 23:30:17.676 [demo-trace-fail-3] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para mascotaId=1, consultando veterinaria-mascota-ms...
+2026-09-30 23:30:17.676 [demo-trace-fail-3] INFO  p.e.u.c.client.MascotaClientService - Consultando veterinaria-mascota-ms para mascotaId=1 (circuit breaker CLOSED/HALF_OPEN)
+2026-09-30 23:30:17.676 [demo-trace-fail-3] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> GET http://veterinaria-mascota-ms/api/v1/mascotas/1 HTTP/1.1
+2026-09-30 23:30:17.676 [demo-trace-fail-3] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] X-Trace-ID: demo-trace-fail-3
+2026-09-30 23:30:17.676 [demo-trace-fail-3] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> END HTTP (0-byte body)
+2026-09-30 23:30:19.709 [demo-trace-fail-3] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- ERROR ConnectException: Connection refused: getsockopt (2023ms)
+2026-09-30 23:30:19.709 [demo-trace-fail-3] WARN  p.e.u.c.client.MascotaClientService - Circuit breaker 'mascotaService' activo. No se pudo consultar la mascota 1: feign.RetryableException: Connection refused: getsockopt executing GET http://veterinaria-mascota-ms/api/v1/mascotas/1
+2026-09-30 23:30:19.726 [demo-trace-fail-3] INFO  p.edu.upeu.citas.service.CitaService - Cita 5 creada con mascotaNombre='Pendiente de validación (servicio de mascotas no disponible)' y estado='PENDIENTE_VALIDACION'
+2026-09-30 23:30:19.831 [demo-trace-fail-4] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para mascotaId=1, consultando veterinaria-mascota-ms...
+2026-09-30 23:30:19.831 [demo-trace-fail-4] INFO  p.e.u.c.client.MascotaClientService - Consultando veterinaria-mascota-ms para mascotaId=1 (circuit breaker CLOSED/HALF_OPEN)
+2026-09-30 23:30:19.831 [demo-trace-fail-4] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> GET http://veterinaria-mascota-ms/api/v1/mascotas/1 HTTP/1.1
+2026-09-30 23:30:19.831 [demo-trace-fail-4] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] X-Trace-ID: demo-trace-fail-4
+2026-09-30 23:30:19.831 [demo-trace-fail-4] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> END HTTP (0-byte body)
+2026-09-30 23:30:21.851 [demo-trace-fail-4] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- ERROR ConnectException: Connection refused: getsockopt (2018ms)
+2026-09-30 23:30:21.860 [demo-trace-fail-4] WARN  p.e.u.c.client.MascotaClientService - Circuit breaker 'mascotaService' activo. No se pudo consultar la mascota 1: feign.RetryableException: Connection refused: getsockopt executing GET http://veterinaria-mascota-ms/api/v1/mascotas/1
+2026-09-30 23:30:21.876 [demo-trace-fail-4] INFO  p.edu.upeu.citas.service.CitaService - Cita 6 creada con mascotaNombre='Pendiente de validación (servicio de mascotas no disponible)' y estado='PENDIENTE_VALIDACION'
+2026-09-30 23:30:21.978 [demo-trace-fail-5] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para mascotaId=1, consultando veterinaria-mascota-ms...
+2026-09-30 23:30:21.981 [demo-trace-fail-5] WARN  p.e.u.c.client.MascotaClientService - Circuit breaker 'mascotaService' activo. No se pudo consultar la mascota 1: io.github.resilience4j.circuitbreaker.CallNotPermittedException: CircuitBreaker 'mascotaService' is OPEN and does not permit further calls
+2026-09-30 23:30:21.991 [demo-trace-fail-5] INFO  p.edu.upeu.citas.service.CitaService - Cita 7 creada con mascotaNombre='Pendiente de validación (servicio de mascotas no disponible)' y estado='PENDIENTE_VALIDACION'
+2026-09-30 23:30:22.105 [demo-trace-fail-6] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para mascotaId=1, consultando veterinaria-mascota-ms...
+2026-09-30 23:30:22.106 [demo-trace-fail-6] WARN  p.e.u.c.client.MascotaClientService - Circuit breaker 'mascotaService' activo. No se pudo consultar la mascota 1: io.github.resilience4j.circuitbreaker.CallNotPermittedException: CircuitBreaker 'mascotaService' is OPEN and does not permit further calls
+2026-09-30 23:30:22.119 [demo-trace-fail-6] INFO  p.edu.upeu.citas.service.CitaService - Cita 8 creada con mascotaNombre='Pendiente de validación (servicio de mascotas no disponible)' y estado='PENDIENTE_VALIDACION'
+2026-09-30 23:31:54.543 [demo-trace-recovery] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para mascotaId=1, consultando veterinaria-mascota-ms...
+2026-09-30 23:31:54.544 [demo-trace-recovery] INFO  p.e.u.c.client.MascotaClientService - Consultando veterinaria-mascota-ms para mascotaId=1 (circuit breaker CLOSED/HALF_OPEN)
+2026-09-30 23:31:54.546 [demo-trace-recovery] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> GET http://veterinaria-mascota-ms/api/v1/mascotas/1 HTTP/1.1
+2026-09-30 23:31:54.546 [demo-trace-recovery] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] X-Trace-ID: demo-trace-recovery
+2026-09-30 23:31:54.546 [demo-trace-recovery] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> END HTTP (0-byte body)
+2026-09-30 23:31:54.732 [demo-trace-recovery] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- HTTP/1.1 200 (185ms)
+2026-09-30 23:31:54.732 [demo-trace-recovery] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] connection: keep-alive
+2026-09-30 23:31:54.732 [demo-trace-recovery] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-length: 142
+2026-09-30 23:31:54.732 [demo-trace-recovery] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-type: application/json
+2026-09-30 23:31:54.732 [demo-trace-recovery] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] date: Thu, 01 Oct 2026 04:31:54 GMT
+2026-09-30 23:31:54.732 [demo-trace-recovery] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] keep-alive: timeout=60
+2026-09-30 23:31:54.732 [demo-trace-recovery] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] x-trace-id: demo-trace-recovery
+2026-09-30 23:31:54.732 [demo-trace-recovery] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- END HTTP (142-byte body)
+2026-09-30 23:31:54.734 [demo-trace-recovery] INFO  p.e.u.c.client.MascotaClientService - Respuesta de veterinaria-mascota-ms para mascotaId=1: nombre='Firulais', activo=true
+2026-09-30 23:31:54.751 [demo-trace-recovery] INFO  p.edu.upeu.citas.service.CitaService - Cita 9 creada con mascotaNombre='Firulais' y estado='PROGRAMADA'
+2026-09-30 23:32:05.593 [demo-trace-recovery-2] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para mascotaId=1, consultando veterinaria-mascota-ms...
+2026-09-30 23:32:05.594 [demo-trace-recovery-2] INFO  p.e.u.c.client.MascotaClientService - Consultando veterinaria-mascota-ms para mascotaId=1 (circuit breaker CLOSED/HALF_OPEN)
+2026-09-30 23:32:05.594 [demo-trace-recovery-2] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> GET http://veterinaria-mascota-ms/api/v1/mascotas/1 HTTP/1.1
+2026-09-30 23:32:05.594 [demo-trace-recovery-2] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] X-Trace-ID: demo-trace-recovery-2
+2026-09-30 23:32:05.594 [demo-trace-recovery-2] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> END HTTP (0-byte body)
+2026-09-30 23:32:05.619 [demo-trace-recovery-2] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- HTTP/1.1 200 (24ms)
+2026-09-30 23:32:05.620 [demo-trace-recovery-2] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] connection: keep-alive
+2026-09-30 23:32:05.620 [demo-trace-recovery-2] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-length: 142
+2026-09-30 23:32:05.620 [demo-trace-recovery-2] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-type: application/json
+2026-09-30 23:32:05.620 [demo-trace-recovery-2] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] date: Thu, 01 Oct 2026 04:32:05 GMT
+2026-09-30 23:32:05.620 [demo-trace-recovery-2] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] keep-alive: timeout=60
+2026-09-30 23:32:05.620 [demo-trace-recovery-2] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] x-trace-id: demo-trace-recovery-2
+2026-09-30 23:32:05.620 [demo-trace-recovery-2] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- END HTTP (142-byte body)
+2026-09-30 23:32:05.621 [demo-trace-recovery-2] INFO  p.e.u.c.client.MascotaClientService - Respuesta de veterinaria-mascota-ms para mascotaId=1: nombre='Firulais', activo=true
+2026-09-30 23:32:05.633 [demo-trace-recovery-2] INFO  p.edu.upeu.citas.service.CitaService - Cita 10 creada con mascotaNombre='Firulais' y estado='PROGRAMADA'
+2026-09-30 23:32:05.717 [demo-trace-recovery-3] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para mascotaId=1, consultando veterinaria-mascota-ms...
+2026-09-30 23:32:05.719 [demo-trace-recovery-3] INFO  p.e.u.c.client.MascotaClientService - Consultando veterinaria-mascota-ms para mascotaId=1 (circuit breaker CLOSED/HALF_OPEN)
+2026-09-30 23:32:05.719 [demo-trace-recovery-3] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> GET http://veterinaria-mascota-ms/api/v1/mascotas/1 HTTP/1.1
+2026-09-30 23:32:05.719 [demo-trace-recovery-3] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] X-Trace-ID: demo-trace-recovery-3
+2026-09-30 23:32:05.719 [demo-trace-recovery-3] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> END HTTP (0-byte body)
+2026-09-30 23:32:05.742 [demo-trace-recovery-3] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- HTTP/1.1 200 (22ms)
+2026-09-30 23:32:05.742 [demo-trace-recovery-3] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] connection: keep-alive
+2026-09-30 23:32:05.742 [demo-trace-recovery-3] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-length: 142
+2026-09-30 23:32:05.742 [demo-trace-recovery-3] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-type: application/json
+2026-09-30 23:32:05.743 [demo-trace-recovery-3] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] date: Thu, 01 Oct 2026 04:32:05 GMT
+2026-09-30 23:32:05.743 [demo-trace-recovery-3] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] keep-alive: timeout=60
+2026-09-30 23:32:05.743 [demo-trace-recovery-3] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] x-trace-id: demo-trace-recovery-3
+2026-09-30 23:32:05.743 [demo-trace-recovery-3] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- END HTTP (142-byte body)
+2026-09-30 23:32:05.743 [demo-trace-recovery-3] INFO  p.e.u.c.client.MascotaClientService - Respuesta de veterinaria-mascota-ms para mascotaId=1: nombre='Firulais', activo=true
+2026-09-30 23:32:05.754 [demo-trace-recovery-3] INFO  p.edu.upeu.citas.service.CitaService - Cita 11 creada con mascotaNombre='Firulais' y estado='PROGRAMADA'
+2026-09-30 23:34:08.416 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

@@ -1,0 +1,91 @@
+2026-10-01 22:57:05.705 [] INFO  p.e.u.c.VeterinariaClienteApplication - Starting VeterinariaClienteApplication using Java 21.0.10 with PID 7288 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-cliente-ms\target\classes started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-cliente-ms)
+2026-10-01 22:57:05.708 [] DEBUG p.e.u.c.VeterinariaClienteApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-10-01 22:57:05.710 [] INFO  p.e.u.c.VeterinariaClienteApplication - The following 1 profile is active: "dev"
+2026-10-01 22:57:05.768 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-10-01 22:57:05.768 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-cliente-ms, profiles=[default], label=null, version=null, state=null
+2026-10-01 22:57:05.770 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-10-01 22:57:05.770 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-cliente-ms, profiles=[dev], label=null, version=null, state=null
+2026-10-01 22:57:05.774 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-01 22:57:05.775 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-01 22:57:07.649 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-01 22:57:08.053 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 381 ms. Found 1 JPA repository interface.
+2026-10-01 22:57:08.908 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f5701584-90fa-354a-9d9a-afe19d66199b
+2026-10-01 22:57:09.776 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8086 (http)
+2026-10-01 22:57:09.795 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-01 22:57:09.796 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-10-01 22:57:09.891 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4115 ms
+2026-10-01 22:57:10.240 [] DEBUG p.e.u.c.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-10-01 22:57:10.496 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-01 22:57:10.752 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5995376c
+2026-10-01 22:57:10.754 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-01 22:57:10.835 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:15436/veterinaria_cliente_db (PostgreSQL 16.13)
+2026-10-01 22:57:10.943 [] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "public"."flyway_schema_history" does not exist yet
+2026-10-01 22:57:10.948 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.036s)
+2026-10-01 22:57:11.006 [] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "public"."flyway_schema_history" ...
+2026-10-01 22:57:11.246 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": << Empty Schema >>
+2026-10-01 22:57:11.260 [] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "1 - create clientes"
+2026-10-01 22:57:11.353 [] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema "public", now at version v1 (execution time 00:00.063s)
+2026-10-01 22:57:11.489 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-01 22:57:11.567 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-10-01 22:57:12.392 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-01 22:57:12.509 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:15436/veterinaria_cliente_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: veterinaria_cliente_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-01 22:57:13.996 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-01 22:57:14.068 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-01 22:57:14.226 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-01 22:57:14.675 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-01 22:57:16.086 [] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-10-01 22:57:16.340 [] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-10-01 22:57:16.390 [] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-01 22:57:16.403 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-10-01 22:57:16.519 [] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-10-01 22:57:16.557 [] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-10-01 22:57:16.564 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-01 22:57:16.577 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-10-01 22:57:16.577 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-10-01 22:57:16.577 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-10-01 22:57:16.577 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-10-01 22:57:16.577 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-10-01 22:57:16.578 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-10-01 22:57:16.579 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-10-01 22:57:17.048 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-10-01 22:57:17.053 [] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-10-01 22:57:17.053 [] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-10-01 22:57:17.053 [] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1790913437053 with initial instances count: 2
+2026-10-01 22:57:17.067 [] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application VETERINARIA-CLIENTE-MS with eureka with status UP
+2026-10-01 22:57:17.069 [] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1790913437069, current=UP, previous=STARTING]
+2026-10-01 22:57:17.070 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-CLIENTE-MS/veterinaria-cliente-ms:8086: registering service...
+2026-10-01 22:57:17.101 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8086 (http) with context path '/'
+2026-10-01 22:57:17.103 [] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8086
+2026-10-01 22:57:17.115 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-CLIENTE-MS/veterinaria-cliente-ms:8086 - registration status: 204
+2026-10-01 22:57:17.129 [] INFO  p.e.u.c.VeterinariaClienteApplication - Started VeterinariaClienteApplication in 13.233 seconds (process running for 14.24)
+2026-10-01 22:57:17.236 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-01 22:57:17.236 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-01 22:57:17.282 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-01 22:57:17.283 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-01 22:57:17.287 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-10-01 22:58:26.735 [d0302cc8-b4e7-40c8-91a9-105ee41294e7] INFO  p.e.u.cliente.service.ClienteService - Consultando perfil del cliente 1
+2026-10-01 22:58:27.258 [acf01144-0253-48fa-a2b5-02893bcf500e] WARN  p.e.u.c.security.ClienteAccessPolicy - ABAC denegado: usuario cliente@veterinaria.com (idCliente=1) solicitó el cliente 2
+2026-10-01 22:58:27.264 [acf01144-0253-48fa-a2b5-02893bcf500e] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-01 22:58:27.757 [075f5fad-cbc2-4028-b8b9-31f9dabc4246] INFO  p.e.u.cliente.service.ClienteService - Consultando perfil del cliente 1
+2026-10-01 22:58:28.208 [aff808fd-0114-49da-a0a9-d257a1eb0344] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-01 22:58:28.623 [b82fc2e7-9b1d-45c6-a7d6-e8dcf97c0b3e] INFO  p.e.u.cliente.service.ClienteService - Consultando perfil del cliente 2
+2026-10-01 22:58:29.710 [a2733424-0bb4-4a33-943b-8200f8019a5e] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-01 22:58:30.155 [a68ae04d-ba3a-493e-accb-2cfaec3beadc] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "abc"]
+2026-10-01 22:58:31.051 [e3a12ad7-b00a-4bb7-b8c4-0c092d924b03] WARN  p.e.u.c.security.ClienteAccessPolicy - ABAC denegado: usuario cliente2@veterinaria.com (idCliente=2) solicitó el cliente 1
+2026-10-01 22:58:31.053 [e3a12ad7-b00a-4bb7-b8c4-0c092d924b03] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-01 22:59:20.109 [1cd7e600-cb0f-477d-8301-c1009803aca6] INFO  p.e.u.cliente.service.ClienteService - Consultando perfil del cliente 1
+2026-10-01 23:01:29.179 [01cc2fb9-0997-484c-b6c1-76ca332b0688] INFO  p.e.u.cliente.service.ClienteService - Consultando perfil del cliente 2
+2026-10-01 23:01:49.504 [da8d09ef-6af4-479d-88b0-bbf169601160] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 240 ms
+2026-10-01 23:02:16.589 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-01 23:07:16.602 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

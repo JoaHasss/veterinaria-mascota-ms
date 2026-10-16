@@ -7,6 +7,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.support.TransactionSynchronization;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
+import pe.edu.upeu.pago.entity.EstadoPago;
 import pe.edu.upeu.pago.entity.Pago;
 import pe.edu.upeu.pago.event.PagoValidadoEvento;
 
@@ -24,17 +25,20 @@ public class PagoEventosProducer {
     private String origen;
 
     /**
+     * Publica el resultado del pago: pago.validado o pago.fallido segun su estado.
      * Se publica solo despues del commit de la transaccion de BD: si el
      * guardado falla y hace rollback, el evento nunca sale (sin eventos fantasma).
      */
-    public void publicarPagoValidado(Pago pago) {
+    public void publicarResultado(Pago pago, String motivo) {
+        boolean fallido = pago.getEstado() == EstadoPago.FALLIDO;
         PagoValidadoEvento evento = PagoValidadoEvento.builder()
-                .tipoEvento(PagoValidadoEvento.TIPO)
+                .tipoEvento(fallido ? PagoValidadoEvento.TIPO_FALLIDO : PagoValidadoEvento.TIPO)
                 .citaId(pago.getCitaId())
                 .pagoId(pago.getId())
                 .monto(pago.getMonto())
                 .metodoPago(pago.getMetodoPago())
                 .estado(pago.getEstado().name())
+                .motivo(motivo)
                 .origen(origen)
                 .timestamp(System.currentTimeMillis())
                 .build();

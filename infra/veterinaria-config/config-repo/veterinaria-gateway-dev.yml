@@ -10,7 +10,7 @@ spring:
           - id: veterinaria-mascota-ms
             uri: lb://veterinaria-mascota-ms
             predicates:
-              - Path=/api/v1/mascotas/**,/api/v1/especies/**
+              - Path=/api/v1/mascotas/**,/api/v1/especies/**,/api/v1/insumos/**
           - id: citas-ms
             uri: lb://citas-ms
             predicates:

@@ -45,6 +45,10 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.GET, "/api/v1/mascotas/**", "/api/v1/especies/**")
                                 .hasAnyRole(CLIENTE, ADMIN)
                         .requestMatchers("/api/v1/mascotas/**", "/api/v1/especies/**").hasRole(ADMIN)
+                        // Insumos (S9): consulta CLIENTE o ADMIN; descontar/restaurar stock solo ADMIN
+                        // (citas-ms los invoca directo por Eureka, sin pasar por el Gateway)
+                        .requestMatchers(HttpMethod.GET, "/api/v1/insumos/**").hasAnyRole(CLIENTE, ADMIN)
+                        .requestMatchers("/api/v1/insumos/**").hasRole(ADMIN)
                         // Citas: solo CLIENTE (el idCliente se toma del JWT en citas-ms)
                         .requestMatchers("/api/v1/citas/**").hasRole(CLIENTE)
                         // Perfiles de cliente: el control fino (ABAC) lo hace veterinaria-cliente-ms

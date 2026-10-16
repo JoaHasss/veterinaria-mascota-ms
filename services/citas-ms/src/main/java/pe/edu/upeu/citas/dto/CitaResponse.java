@@ -20,4 +20,6 @@ public class CitaResponse {
     private String estado;
     private BigDecimal monto;
     private String metodoPago;
+    private Long insumoId;
+    private Integer cantidadInsumo;
 }

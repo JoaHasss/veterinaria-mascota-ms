@@ -12,10 +12,10 @@ import pe.edu.upeu.gateway.security.JwtRoleConverter;
 
 /**
  * El Gateway actúa como Resource Server: valida firma, expiración e issuer
- * del JWT contra el JWKS de veterinaria-auth-ms y aplica RBAC por ruta.
- * Como el Gateway es Spring Cloud Gateway Server WebMVC (servlet), las
- * reglas por rol se declaran aquí con requestMatchers en lugar de un
- * GatewayFilter reactivo.
+ * del JWT contra el realm "veterinaria" de Keycloak (S07b, issuer-uri) y
+ * aplica RBAC por ruta. Como el Gateway es Spring Cloud Gateway Server
+ * WebMVC (servlet), las reglas por rol se declaran aquí con requestMatchers
+ * en lugar de un GatewayFilter reactivo.
  */
 @Configuration
 @EnableWebSecurity
@@ -35,11 +35,13 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
+                // S11: CORS antes que la autorizacion; sin esto el preflight OPTIONS
+                // (que nunca lleva token) cae en anyRequest().authenticated() y da 401.
+                .cors(cors -> {})
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
-                        // Público: login, registro y JWKS
-                        .requestMatchers("/api/v1/auth/**").permitAll()
+                        // S07b: login y registro ya no pasan por el Gateway, los atiende Keycloak
                         .requestMatchers("/actuator/**").permitAll()
                         // Catálogo de mascotas/especies: lectura CLIENTE o ADMIN, escritura solo ADMIN
                         .requestMatchers(HttpMethod.GET, "/api/v1/mascotas/**", "/api/v1/especies/**")
@@ -53,7 +55,10 @@ public class SecurityConfig {
                         .requestMatchers("/api/v1/citas/**").hasRole(CLIENTE)
                         // Perfiles de cliente: el control fino (ABAC) lo hace veterinaria-cliente-ms
                         .requestMatchers("/api/v1/clientes/**").hasAnyRole(CLIENTE, ADMIN)
-                        // Pagos (S8): solo consulta; se registran al consumir el evento cita.creada
+                        // Pagos (S8): solo consulta; se registran al consumir el evento cita.creada.
+                        // S11: el listado completo es solo ADMIN (ocultarlo en Angular no basta,
+                        // la SPA no es el limite de seguridad); el pago de una cita lo ve CLIENTE.
+                        .requestMatchers(HttpMethod.GET, "/api/v1/pagos").hasRole(ADMIN)
                         .requestMatchers(HttpMethod.GET, "/api/v1/pagos/**").hasAnyRole(CLIENTE, ADMIN)
                         .anyRequest().authenticated()
                 )

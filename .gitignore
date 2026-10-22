@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Angular (S11)
+clients/**/node_modules/
+clients/**/dist/
+clients/**/.angular/

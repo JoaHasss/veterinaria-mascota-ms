@@ -16,6 +16,7 @@ import pe.edu.upeu.pago.repository.PagoRepository;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @Service
@@ -42,6 +43,16 @@ public class PagoServiceImpl implements PagoService {
         return pagoRepository.findById(id)
                 .map(pagoMapper::toResponse)
                 .orElseThrow(() -> new ResourceNotFoundException("Pago no encontrado: " + id));
+    }
+
+    /**
+     * S11: vacio no es un error. Mientras el evento cita.creada no llega por
+     * Kafka la cita existe pero su pago todavia no (consistencia eventual).
+     */
+    @Override
+    @Transactional(readOnly = true)
+    public Optional<PagoResponse> buscarPorCita(Long citaId) {
+        return pagoRepository.findByCitaId(citaId).map(pagoMapper::toResponse);
     }
 
     /**

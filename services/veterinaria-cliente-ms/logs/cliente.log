@@ -1,34 +1,31 @@
-2026-10-01 22:57:05.705 [] INFO  p.e.u.c.VeterinariaClienteApplication - Starting VeterinariaClienteApplication using Java 21.0.10 with PID 7288 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-cliente-ms\target\classes started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-cliente-ms)
-2026-10-01 22:57:05.708 [] DEBUG p.e.u.c.VeterinariaClienteApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
-2026-10-01 22:57:05.710 [] INFO  p.e.u.c.VeterinariaClienteApplication - The following 1 profile is active: "dev"
-2026-10-01 22:57:05.768 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
-2026-10-01 22:57:05.768 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-cliente-ms, profiles=[default], label=null, version=null, state=null
-2026-10-01 22:57:05.770 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
-2026-10-01 22:57:05.770 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-cliente-ms, profiles=[dev], label=null, version=null, state=null
-2026-10-01 22:57:05.774 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-10-01 22:57:05.775 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-10-01 22:57:07.649 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-10-01 22:57:08.053 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 381 ms. Found 1 JPA repository interface.
-2026-10-01 22:57:08.908 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f5701584-90fa-354a-9d9a-afe19d66199b
-2026-10-01 22:57:09.776 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8086 (http)
-2026-10-01 22:57:09.795 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-10-01 22:57:09.796 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
-2026-10-01 22:57:09.891 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4115 ms
-2026-10-01 22:57:10.240 [] DEBUG p.e.u.c.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
-2026-10-01 22:57:10.496 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-10-01 22:57:10.752 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5995376c
-2026-10-01 22:57:10.754 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-10-01 22:57:10.835 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:15436/veterinaria_cliente_db (PostgreSQL 16.13)
-2026-10-01 22:57:10.943 [] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "public"."flyway_schema_history" does not exist yet
-2026-10-01 22:57:10.948 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.036s)
-2026-10-01 22:57:11.006 [] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "public"."flyway_schema_history" ...
-2026-10-01 22:57:11.246 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": << Empty Schema >>
-2026-10-01 22:57:11.260 [] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "1 - create clientes"
-2026-10-01 22:57:11.353 [] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema "public", now at version v1 (execution time 00:00.063s)
-2026-10-01 22:57:11.489 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-10-01 22:57:11.567 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
-2026-10-01 22:57:12.392 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-10-01 22:57:12.509 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2026-10-22 14:59:52.976 [] INFO  p.e.u.c.VeterinariaClienteApplication - Starting VeterinariaClienteApplication using Java 21.0.10 with PID 35464 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-cliente-ms\target\classes started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\veterinaria-cliente-ms)
+2026-10-22 14:59:52.990 [] DEBUG p.e.u.c.VeterinariaClienteApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-10-22 14:59:52.997 [] INFO  p.e.u.c.VeterinariaClienteApplication - The following 1 profile is active: "dev"
+2026-10-22 14:59:53.160 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-10-22 14:59:53.162 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-cliente-ms, profiles=[default], label=null, version=null, state=null
+2026-10-22 14:59:53.167 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-10-22 14:59:53.167 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=veterinaria-cliente-ms, profiles=[dev], label=null, version=null, state=null
+2026-10-22 14:59:53.174 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-22 14:59:53.175 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-22 14:59:56.939 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-22 14:59:57.418 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 447 ms. Found 2 JPA repository interfaces.
+2026-10-22 14:59:58.691 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=89e3e96b-dfc6-3a90-8585-2a325316461d
+2026-10-22 15:00:00.285 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8086 (http)
+2026-10-22 15:00:00.330 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-22 15:00:00.332 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-10-22 15:00:00.522 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 7343 ms
+2026-10-22 15:00:01.128 [] DEBUG p.e.u.c.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-10-22 15:00:01.680 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-22 15:00:02.205 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ff2fc08
+2026-10-22 15:00:02.209 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-22 15:00:02.306 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:15436/veterinaria_cliente_db (PostgreSQL 16.13)
+2026-10-22 15:00:02.537 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.106s)
+2026-10-22 15:00:02.594 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2
+2026-10-22 15:00:02.602 [] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-10-22 15:00:02.896 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-22 15:00:03.106 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-10-22 15:00:04.731 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-22 15:00:05.044 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:15436/veterinaria_cliente_db]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -40,52 +37,279 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-10-01 22:57:13.996 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-10-01 22:57:14.068 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-10-01 22:57:14.226 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-10-01 22:57:14.675 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-10-01 22:57:16.086 [] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
-2026-10-01 22:57:16.340 [] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
-2026-10-01 22:57:16.390 [] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-10-01 22:57:16.403 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
-2026-10-01 22:57:16.519 [] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
-2026-10-01 22:57:16.557 [] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
-2026-10-01 22:57:16.564 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-01 22:57:16.577 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
-2026-10-01 22:57:16.577 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
-2026-10-01 22:57:16.577 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
-2026-10-01 22:57:16.577 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
-2026-10-01 22:57:16.577 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
-2026-10-01 22:57:16.578 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
-2026-10-01 22:57:16.579 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
-2026-10-01 22:57:17.048 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
-2026-10-01 22:57:17.053 [] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
-2026-10-01 22:57:17.053 [] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-10-01 22:57:17.053 [] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1790913437053 with initial instances count: 2
-2026-10-01 22:57:17.067 [] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application VETERINARIA-CLIENTE-MS with eureka with status UP
-2026-10-01 22:57:17.069 [] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1790913437069, current=UP, previous=STARTING]
-2026-10-01 22:57:17.070 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-CLIENTE-MS/veterinaria-cliente-ms:8086: registering service...
-2026-10-01 22:57:17.101 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8086 (http) with context path '/'
-2026-10-01 22:57:17.103 [] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8086
-2026-10-01 22:57:17.115 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-CLIENTE-MS/veterinaria-cliente-ms:8086 - registration status: 204
-2026-10-01 22:57:17.129 [] INFO  p.e.u.c.VeterinariaClienteApplication - Started VeterinariaClienteApplication in 13.233 seconds (process running for 14.24)
-2026-10-01 22:57:17.236 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-10-01 22:57:17.236 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-10-01 22:57:17.282 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-10-01 22:57:17.283 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-10-01 22:57:17.287 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
-2026-10-01 22:58:26.735 [d0302cc8-b4e7-40c8-91a9-105ee41294e7] INFO  p.e.u.cliente.service.ClienteService - Consultando perfil del cliente 1
-2026-10-01 22:58:27.258 [acf01144-0253-48fa-a2b5-02893bcf500e] WARN  p.e.u.c.security.ClienteAccessPolicy - ABAC denegado: usuario cliente@veterinaria.com (idCliente=1) solicitó el cliente 2
-2026-10-01 22:58:27.264 [acf01144-0253-48fa-a2b5-02893bcf500e] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
-2026-10-01 22:58:27.757 [075f5fad-cbc2-4028-b8b9-31f9dabc4246] INFO  p.e.u.cliente.service.ClienteService - Consultando perfil del cliente 1
-2026-10-01 22:58:28.208 [aff808fd-0114-49da-a0a9-d257a1eb0344] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
-2026-10-01 22:58:28.623 [b82fc2e7-9b1d-45c6-a7d6-e8dcf97c0b3e] INFO  p.e.u.cliente.service.ClienteService - Consultando perfil del cliente 2
-2026-10-01 22:58:29.710 [a2733424-0bb4-4a33-943b-8200f8019a5e] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
-2026-10-01 22:58:30.155 [a68ae04d-ba3a-493e-accb-2cfaec3beadc] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "abc"]
-2026-10-01 22:58:31.051 [e3a12ad7-b00a-4bb7-b8c4-0c092d924b03] WARN  p.e.u.c.security.ClienteAccessPolicy - ABAC denegado: usuario cliente2@veterinaria.com (idCliente=2) solicitó el cliente 1
-2026-10-01 22:58:31.053 [e3a12ad7-b00a-4bb7-b8c4-0c092d924b03] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
-2026-10-01 22:59:20.109 [1cd7e600-cb0f-477d-8301-c1009803aca6] INFO  p.e.u.cliente.service.ClienteService - Consultando perfil del cliente 1
-2026-10-01 23:01:29.179 [01cc2fb9-0997-484c-b6c1-76ca332b0688] INFO  p.e.u.cliente.service.ClienteService - Consultando perfil del cliente 2
-2026-10-01 23:01:49.504 [da8d09ef-6af4-479d-88b0-bbf169601160] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 240 ms
-2026-10-01 23:02:16.589 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-01 23:07:16.602 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-22 15:00:07.791 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-22 15:00:07.970 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-22 15:00:08.295 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-22 15:00:09.606 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-22 15:00:12.447 [] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-10-22 15:00:12.966 [] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-10-22 15:00:13.103 [] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-22 15:00:13.129 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-10-22 15:00:13.481 [] INFO  o.a.k.common.config.AbstractConfig - AdminClientConfig values: 
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:19092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = veterinaria-cliente-ms-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = false
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2026-10-22 15:00:14.289 [] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 4.1.2
+2026-10-22 15:00:14.289 [] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: c82fd9b934b4c1e6
+2026-10-22 15:00:14.289 [] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1792699214285
+2026-10-22 15:00:16.057 [] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-10-22 15:00:16.058 [] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-10-22 15:00:16.059 [] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-10-22 15:00:16.060 [] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for veterinaria-cliente-ms-admin-0 unregistered
+2026-10-22 15:00:16.071 [] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-10-22 15:00:16.072 [] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-10-22 15:00:16.072 [] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-10-22 15:00:16.122 [] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-10-22 15:00:16.196 [] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-10-22 15:00:16.210 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-22 15:00:16.234 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-10-22 15:00:16.234 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-10-22 15:00:16.234 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-10-22 15:00:16.234 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-10-22 15:00:16.234 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-10-22 15:00:16.234 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-10-22 15:00:16.234 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-10-22 15:00:16.961 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-10-22 15:00:16.972 [] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-10-22 15:00:16.978 [] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-10-22 15:00:16.980 [] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1792699216980 with initial instances count: 1
+2026-10-22 15:00:16.996 [] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application VETERINARIA-CLIENTE-MS with eureka with status UP
+2026-10-22 15:00:16.996 [] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1792699216996, current=UP, previous=STARTING]
+2026-10-22 15:00:17.002 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-CLIENTE-MS/veterinaria-cliente-ms:8086: registering service...
+2026-10-22 15:00:17.037 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8086 (http) with context path '/'
+2026-10-22 15:00:17.040 [] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8086
+2026-10-22 15:00:17.085 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_VETERINARIA-CLIENTE-MS/veterinaria-cliente-ms:8086 - registration status: 204
+2026-10-22 15:00:17.160 [] INFO  o.a.k.common.config.AbstractConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-veterinaria-cliente-ms-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = veterinaria-cliente-ms
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	share.acknowledgement.mode = implicit
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+
+2026-10-22 15:00:17.296 [] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-10-22 15:00:17.487 [] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 4.1.2
+2026-10-22 15:00:17.495 [] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: c82fd9b934b4c1e6
+2026-10-22 15:00:17.495 [] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1792699217487
+2026-10-22 15:00:17.520 [] INFO  o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-veterinaria-cliente-ms-1, groupId=veterinaria-cliente-ms] Subscribed to topic(s): usuario-eventos
+2026-10-22 15:00:17.576 [] INFO  p.e.u.c.VeterinariaClienteApplication - Started VeterinariaClienteApplication in 28.152 seconds (process running for 30.052)
+2026-10-22 15:00:17.594 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-22 15:00:17.594 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-22 15:00:17.603 [] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-veterinaria-cliente-ms-1, groupId=veterinaria-cliente-ms] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-22 15:00:17.654 [] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-veterinaria-cliente-ms-1, groupId=veterinaria-cliente-ms] Discovered group coordinator localhost:19092 (id: 2147483646 rack: null isFenced: false)
+2026-10-22 15:00:17.662 [] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-veterinaria-cliente-ms-1, groupId=veterinaria-cliente-ms] (Re-)joining group
+2026-10-22 15:00:17.904 [] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-veterinaria-cliente-ms-1, groupId=veterinaria-cliente-ms] Request joining group due to: need to re-join with the given member-id: consumer-veterinaria-cliente-ms-1-091418eb-ac2c-4260-9423-760097d0a209
+2026-10-22 15:00:17.906 [] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-veterinaria-cliente-ms-1, groupId=veterinaria-cliente-ms] (Re-)joining group
+2026-10-22 15:00:18.063 [] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-veterinaria-cliente-ms-1, groupId=veterinaria-cliente-ms] Successfully joined group with generation Generation{generationId=3, memberId='consumer-veterinaria-cliente-ms-1-091418eb-ac2c-4260-9423-760097d0a209', protocol='range'}
+2026-10-22 15:00:18.081 [] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-veterinaria-cliente-ms-1, groupId=veterinaria-cliente-ms] Finished assignment for group at generation 3: {consumer-veterinaria-cliente-ms-1-091418eb-ac2c-4260-9423-760097d0a209=Assignment(partitions=[usuario-eventos-0, usuario-eventos-1, usuario-eventos-2])}
+2026-10-22 15:00:18.361 [] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-veterinaria-cliente-ms-1, groupId=veterinaria-cliente-ms] Successfully synced group in generation Generation{generationId=3, memberId='consumer-veterinaria-cliente-ms-1-091418eb-ac2c-4260-9423-760097d0a209', protocol='range'}
+2026-10-22 15:00:18.363 [] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-veterinaria-cliente-ms-1, groupId=veterinaria-cliente-ms] Notifying assignor about the new Assignment(partitions=[usuario-eventos-0, usuario-eventos-1, usuario-eventos-2])
+2026-10-22 15:00:18.370 [] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-veterinaria-cliente-ms-1, groupId=veterinaria-cliente-ms] Adding newly assigned partitions: [usuario-eventos-0, usuario-eventos-1, usuario-eventos-2]
+2026-10-22 15:00:18.453 [] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-veterinaria-cliente-ms-1, groupId=veterinaria-cliente-ms] Found no committed offset for partition usuario-eventos-2
+2026-10-22 15:00:18.457 [] INFO  o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition usuario-eventos-0 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null isFenced: false)], epoch=0}}
+2026-10-22 15:00:18.464 [] INFO  o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition usuario-eventos-1 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null isFenced: false)], epoch=0}}
+2026-10-22 15:00:18.572 [] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-veterinaria-cliente-ms-1, groupId=veterinaria-cliente-ms] Resetting offset for partition usuario-eventos-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null isFenced: false)], epoch=0}}.
+2026-10-22 15:00:18.574 [] INFO  o.s.k.l.KafkaMessageListenerContainer - veterinaria-cliente-ms: partitions assigned: [usuario-eventos-0, usuario-eventos-1, usuario-eventos-2]
+2026-10-22 15:05:16.245 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-22 15:06:47.912 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-22 15:06:47.912 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-22 15:06:47.922 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2026-10-22 15:06:48.441 [01a05ad3-2297-4d8a-9ddc-fbff3ad022bb] INFO  p.e.u.cliente.service.ClienteService - Consultando perfil del cliente 1
+2026-10-22 15:10:16.256 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

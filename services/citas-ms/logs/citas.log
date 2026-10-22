@@ -1,30 +1,31 @@
-2026-10-03 20:27:02.663 [] INFO  pe.edu.upeu.citas.CitasApplication - Starting CitasApplication v0.0.1-SNAPSHOT using Java 21.0.10 with PID 30260 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\citas-ms\target\citas-ms-0.0.1-SNAPSHOT.jar started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\citas-ms)
-2026-10-03 20:27:02.676 [] DEBUG pe.edu.upeu.citas.CitasApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
-2026-10-03 20:27:02.676 [] INFO  pe.edu.upeu.citas.CitasApplication - The following 1 profile is active: "dev"
-2026-10-03 20:27:02.791 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
-2026-10-03 20:27:02.793 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=citas-ms, profiles=[default], label=null, version=null, state=null
-2026-10-03 20:27:02.793 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
-2026-10-03 20:27:02.793 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=citas-ms, profiles=[dev], label=null, version=null, state=null
-2026-10-03 20:27:06.355 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-10-03 20:27:06.684 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 297 ms. Found 1 JPA repository interface.
-2026-10-03 20:27:08.135 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=febd7221-ca24-3bf3-8e0a-a4be058ac6c6
-2026-10-03 20:27:10.632 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8095 (http)
-2026-10-03 20:27:10.797 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-10-03 20:27:10.798 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
-2026-10-03 20:27:10.902 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 8098 ms
-2026-10-03 20:27:11.586 [] DEBUG p.e.u.c.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
-2026-10-03 20:27:12.227 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-10-03 20:27:12.787 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1237aa73
-2026-10-03 20:27:12.791 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-10-03 20:27:12.863 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:15433/veterinaria_citas_db (PostgreSQL 16.13)
-2026-10-03 20:27:13.014 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.069s)
-2026-10-03 20:27:13.053 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 3
-2026-10-03 20:27:13.076 [] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "4 - add pago to citas"
-2026-10-03 20:27:13.140 [] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema "public", now at version v4 (execution time 00:00.035s)
-2026-10-03 20:27:13.537 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-10-03 20:27:13.747 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
-2026-10-03 20:27:15.037 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-10-03 20:27:15.232 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2026-10-22 14:59:54.473 [] INFO  pe.edu.upeu.citas.CitasApplication - Starting CitasApplication using Java 21.0.10 with PID 35476 (C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\citas-ms\target\classes started by ASUS in C:\5to ciclo\Desarrollo de Aplicaciones Distribuidas\Tarea-1\services\citas-ms)
+2026-10-22 14:59:54.505 [] DEBUG pe.edu.upeu.citas.CitasApplication - Running with Spring Boot v4.0.7, Spring v7.0.8
+2026-10-22 14:59:54.512 [] INFO  pe.edu.upeu.citas.CitasApplication - The following 1 profile is active: "dev"
+2026-10-22 14:59:54.749 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-10-22 14:59:54.749 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=citas-ms, profiles=[default], label=null, version=null, state=null
+2026-10-22 14:59:54.754 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:18888
+2026-10-22 14:59:54.754 [] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=citas-ms, profiles=[dev], label=null, version=null, state=null
+2026-10-22 14:59:54.761 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-22 14:59:54.761 [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-22 14:59:59.008 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-22 14:59:59.400 [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 363 ms. Found 1 JPA repository interface.
+2026-10-22 15:00:00.893 [] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1497bae3-a607-32cc-a363-b52f24e84bc5
+2026-10-22 15:00:03.435 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8095 (http)
+2026-10-22 15:00:03.484 [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-22 15:00:03.484 [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-10-22 15:00:03.737 [] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 8969 ms
+2026-10-22 15:00:04.755 [] DEBUG p.e.u.c.filter.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-10-22 15:00:05.534 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-22 15:00:06.058 [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@57860006
+2026-10-22 15:00:06.062 [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-22 15:00:06.151 [] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:15433/veterinaria_citas_db (PostgreSQL 16.13)
+2026-10-22 15:00:06.426 [] INFO  o.f.core.internal.command.DbValidate - Successfully validated 5 migrations (execution time 00:00.142s)
+2026-10-22 15:00:06.485 [] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 5
+2026-10-22 15:00:06.494 [] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-10-22 15:00:06.949 [] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-22 15:00:07.178 [] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-10-22 15:00:08.838 [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-22 15:00:09.117 [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:15433/veterinaria_citas_db]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -36,114 +37,95 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-10-03 20:27:17.089 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-10-03 20:27:17.183 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-10-03 20:27:17.698 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-10-03 20:27:17.953 [] INFO  o.s.c.o.FeignClientFactoryBean - For 'veterinaria-mascota-ms' URL not provided. Will try picking an instance via load-balancing.
-2026-10-03 20:27:18.575 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-10-03 20:27:22.758 [] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
-2026-10-03 20:27:22.875 [] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-10-03 20:27:22.926 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 5 endpoints beneath base path '/actuator'
-2026-10-03 20:27:24.100 [] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
-2026-10-03 20:27:24.152 [] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
-2026-10-03 20:27:24.160 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-03 20:27:24.171 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
-2026-10-03 20:27:24.172 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
-2026-10-03 20:27:24.172 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
-2026-10-03 20:27:24.172 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
-2026-10-03 20:27:24.172 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
-2026-10-03 20:27:24.172 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
-2026-10-03 20:27:24.172 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
-2026-10-03 20:27:24.601 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
-2026-10-03 20:27:24.606 [] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
-2026-10-03 20:27:24.611 [] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-10-03 20:27:24.613 [] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1791077244613 with initial instances count: 2
-2026-10-03 20:27:24.623 [] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CITAS-MS with eureka with status UP
-2026-10-03 20:27:24.624 [] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1791077244624, current=UP, previous=STARTING]
-2026-10-03 20:27:24.625 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CITAS-MS/citas-ms:8095: registering service...
-2026-10-03 20:27:24.670 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8095 (http) with context path '/'
-2026-10-03 20:27:24.671 [] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8095
-2026-10-03 20:27:24.675 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CITAS-MS/citas-ms:8095 - registration status: 204
-2026-10-03 20:27:24.948 [] INFO  pe.edu.upeu.citas.CitasApplication - Started CitasApplication in 25.296 seconds (process running for 26.889)
-2026-10-03 20:27:24.960 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-10-03 20:27:24.961 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-10-03 20:27:25.047 [] INFO  o.s.k.l.KafkaMessageListenerContainer - citas-ms: partitions assigned: [pago-eventos-0, pago-eventos-1, pago-eventos-2]
-2026-10-03 20:27:26.124 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-10-03 20:27:26.124 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-10-03 20:27:26.128 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
-2026-10-03 20:28:12.517 [faf229d4-e6ac-41a1-a06a-17d0bb340d59] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para idCliente=1 (tomado del JWT), mascotaId=1, consultando veterinaria-mascota-ms...
-2026-10-03 20:28:12.539 [faf229d4-e6ac-41a1-a06a-17d0bb340d59] INFO  p.e.u.c.client.MascotaClientService - Consultando veterinaria-mascota-ms para mascotaId=1 (circuit breaker CLOSED/HALF_OPEN)
-2026-10-03 20:28:12.546 [faf229d4-e6ac-41a1-a06a-17d0bb340d59] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> GET http://veterinaria-mascota-ms/api/v1/mascotas/1 HTTP/1.1
-2026-10-03 20:28:12.546 [faf229d4-e6ac-41a1-a06a-17d0bb340d59] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] X-Trace-ID: faf229d4-e6ac-41a1-a06a-17d0bb340d59
-2026-10-03 20:28:12.546 [faf229d4-e6ac-41a1-a06a-17d0bb340d59] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> END HTTP (0-byte body)
-2026-10-03 20:28:13.090 [faf229d4-e6ac-41a1-a06a-17d0bb340d59] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- HTTP/1.1 200 (543ms)
-2026-10-03 20:28:13.090 [faf229d4-e6ac-41a1-a06a-17d0bb340d59] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] connection: keep-alive
-2026-10-03 20:28:13.090 [faf229d4-e6ac-41a1-a06a-17d0bb340d59] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-length: 171
-2026-10-03 20:28:13.090 [faf229d4-e6ac-41a1-a06a-17d0bb340d59] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-type: application/json
-2026-10-03 20:28:13.090 [faf229d4-e6ac-41a1-a06a-17d0bb340d59] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] date: Sun, 04 Oct 2026 01:28:13 GMT
-2026-10-03 20:28:13.090 [faf229d4-e6ac-41a1-a06a-17d0bb340d59] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] keep-alive: timeout=60
-2026-10-03 20:28:13.090 [faf229d4-e6ac-41a1-a06a-17d0bb340d59] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] x-trace-id: faf229d4-e6ac-41a1-a06a-17d0bb340d59
-2026-10-03 20:28:13.090 [faf229d4-e6ac-41a1-a06a-17d0bb340d59] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- END HTTP (171-byte body)
-2026-10-03 20:28:13.102 [faf229d4-e6ac-41a1-a06a-17d0bb340d59] INFO  p.e.u.c.client.MascotaClientService - Respuesta de veterinaria-mascota-ms para mascotaId=1: nombre='Firulais', activo=true
-2026-10-03 20:28:13.201 [faf229d4-e6ac-41a1-a06a-17d0bb340d59] INFO  p.edu.upeu.citas.service.CitaService - Cita 4 creada para idCliente=1 con mascotaNombre='Firulais' y estado='PENDIENTE_PAGO'
-2026-10-03 20:28:13.453 [] INFO  p.e.u.c.kafka.CitaEventosProducer - component=cita-producer eventType=cita.creada citaId=4 status=PUBLICADO topic=cita-eventos partition=1 offset=0
-2026-10-03 20:28:14.287 [] INFO  p.e.u.c.kafka.PagoEventosConsumer - component=pago-consumer eventType=pago.validado citaId=4 status=RECIBIDO partition=1 offset=0
-2026-10-03 20:28:14.339 [] INFO  p.edu.upeu.citas.service.CitaService - component=cita-service eventType=pago.validado citaId=4 status=CITA_PAGADA pagoId=1 estado=PENDIENTE_PAGO->PAGADA
-2026-10-03 20:28:30.214 [f4901b10-0f64-4200-9739-dccd4ffd915a] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para idCliente=1 (tomado del JWT), mascotaId=1, consultando veterinaria-mascota-ms...
-2026-10-03 20:28:30.216 [f4901b10-0f64-4200-9739-dccd4ffd915a] INFO  p.e.u.c.client.MascotaClientService - Consultando veterinaria-mascota-ms para mascotaId=1 (circuit breaker CLOSED/HALF_OPEN)
-2026-10-03 20:28:30.216 [f4901b10-0f64-4200-9739-dccd4ffd915a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> GET http://veterinaria-mascota-ms/api/v1/mascotas/1 HTTP/1.1
-2026-10-03 20:28:30.216 [f4901b10-0f64-4200-9739-dccd4ffd915a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] X-Trace-ID: f4901b10-0f64-4200-9739-dccd4ffd915a
-2026-10-03 20:28:30.216 [f4901b10-0f64-4200-9739-dccd4ffd915a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> END HTTP (0-byte body)
-2026-10-03 20:28:30.238 [f4901b10-0f64-4200-9739-dccd4ffd915a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- HTTP/1.1 200 (21ms)
-2026-10-03 20:28:30.238 [f4901b10-0f64-4200-9739-dccd4ffd915a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] connection: keep-alive
-2026-10-03 20:28:30.239 [f4901b10-0f64-4200-9739-dccd4ffd915a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-length: 171
-2026-10-03 20:28:30.239 [f4901b10-0f64-4200-9739-dccd4ffd915a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-type: application/json
-2026-10-03 20:28:30.239 [f4901b10-0f64-4200-9739-dccd4ffd915a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] date: Sun, 04 Oct 2026 01:28:30 GMT
-2026-10-03 20:28:30.239 [f4901b10-0f64-4200-9739-dccd4ffd915a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] keep-alive: timeout=60
-2026-10-03 20:28:30.239 [f4901b10-0f64-4200-9739-dccd4ffd915a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] x-trace-id: f4901b10-0f64-4200-9739-dccd4ffd915a
-2026-10-03 20:28:30.239 [f4901b10-0f64-4200-9739-dccd4ffd915a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- END HTTP (171-byte body)
-2026-10-03 20:28:30.239 [f4901b10-0f64-4200-9739-dccd4ffd915a] INFO  p.e.u.c.client.MascotaClientService - Respuesta de veterinaria-mascota-ms para mascotaId=1: nombre='Firulais', activo=true
-2026-10-03 20:28:30.244 [f4901b10-0f64-4200-9739-dccd4ffd915a] INFO  p.edu.upeu.citas.service.CitaService - Cita 5 creada para idCliente=1 con mascotaNombre='Firulais' y estado='PENDIENTE_PAGO'
-2026-10-03 20:28:30.262 [] INFO  p.e.u.c.kafka.CitaEventosProducer - component=cita-producer eventType=cita.creada citaId=5 status=PUBLICADO topic=cita-eventos partition=0 offset=0
-2026-10-03 20:28:50.270 [c05f77ca-a03c-40dd-ae10-5bad20ed8c2a] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para idCliente=1 (tomado del JWT), mascotaId=2, consultando veterinaria-mascota-ms...
-2026-10-03 20:28:50.270 [c05f77ca-a03c-40dd-ae10-5bad20ed8c2a] INFO  p.e.u.c.client.MascotaClientService - Consultando veterinaria-mascota-ms para mascotaId=2 (circuit breaker CLOSED/HALF_OPEN)
-2026-10-03 20:28:50.271 [c05f77ca-a03c-40dd-ae10-5bad20ed8c2a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> GET http://veterinaria-mascota-ms/api/v1/mascotas/2 HTTP/1.1
-2026-10-03 20:28:50.271 [c05f77ca-a03c-40dd-ae10-5bad20ed8c2a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] X-Trace-ID: c05f77ca-a03c-40dd-ae10-5bad20ed8c2a
-2026-10-03 20:28:50.271 [c05f77ca-a03c-40dd-ae10-5bad20ed8c2a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> END HTTP (0-byte body)
-2026-10-03 20:28:50.295 [c05f77ca-a03c-40dd-ae10-5bad20ed8c2a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- HTTP/1.1 200 (24ms)
-2026-10-03 20:28:50.295 [c05f77ca-a03c-40dd-ae10-5bad20ed8c2a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] connection: keep-alive
-2026-10-03 20:28:50.295 [c05f77ca-a03c-40dd-ae10-5bad20ed8c2a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-length: 151
-2026-10-03 20:28:50.295 [c05f77ca-a03c-40dd-ae10-5bad20ed8c2a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-type: application/json
-2026-10-03 20:28:50.296 [c05f77ca-a03c-40dd-ae10-5bad20ed8c2a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] date: Sun, 04 Oct 2026 01:28:50 GMT
-2026-10-03 20:28:50.296 [c05f77ca-a03c-40dd-ae10-5bad20ed8c2a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] keep-alive: timeout=60
-2026-10-03 20:28:50.296 [c05f77ca-a03c-40dd-ae10-5bad20ed8c2a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] x-trace-id: c05f77ca-a03c-40dd-ae10-5bad20ed8c2a
-2026-10-03 20:28:50.296 [c05f77ca-a03c-40dd-ae10-5bad20ed8c2a] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- END HTTP (151-byte body)
-2026-10-03 20:28:50.297 [c05f77ca-a03c-40dd-ae10-5bad20ed8c2a] INFO  p.e.u.c.client.MascotaClientService - Respuesta de veterinaria-mascota-ms para mascotaId=2: nombre='Michi', activo=true
-2026-10-03 20:28:50.302 [c05f77ca-a03c-40dd-ae10-5bad20ed8c2a] INFO  p.edu.upeu.citas.service.CitaService - Cita 6 creada para idCliente=1 con mascotaNombre='Michi' y estado='PENDIENTE_PAGO'
-2026-10-03 20:28:50.328 [] INFO  p.e.u.c.kafka.CitaEventosProducer - component=cita-producer eventType=cita.creada citaId=6 status=PUBLICADO topic=cita-eventos partition=1 offset=1
-2026-10-03 20:28:50.380 [5a800f3d-bdf9-4351-8c9d-b6c7937f1d58] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para idCliente=1 (tomado del JWT), mascotaId=2, consultando veterinaria-mascota-ms...
-2026-10-03 20:28:50.381 [5a800f3d-bdf9-4351-8c9d-b6c7937f1d58] INFO  p.e.u.c.client.MascotaClientService - Consultando veterinaria-mascota-ms para mascotaId=2 (circuit breaker CLOSED/HALF_OPEN)
-2026-10-03 20:28:50.381 [5a800f3d-bdf9-4351-8c9d-b6c7937f1d58] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> GET http://veterinaria-mascota-ms/api/v1/mascotas/2 HTTP/1.1
-2026-10-03 20:28:50.382 [5a800f3d-bdf9-4351-8c9d-b6c7937f1d58] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] X-Trace-ID: 5a800f3d-bdf9-4351-8c9d-b6c7937f1d58
-2026-10-03 20:28:50.382 [5a800f3d-bdf9-4351-8c9d-b6c7937f1d58] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> END HTTP (0-byte body)
-2026-10-03 20:28:50.398 [5a800f3d-bdf9-4351-8c9d-b6c7937f1d58] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- HTTP/1.1 200 (15ms)
-2026-10-03 20:28:50.398 [5a800f3d-bdf9-4351-8c9d-b6c7937f1d58] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] connection: keep-alive
-2026-10-03 20:28:50.398 [5a800f3d-bdf9-4351-8c9d-b6c7937f1d58] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-length: 151
-2026-10-03 20:28:50.398 [5a800f3d-bdf9-4351-8c9d-b6c7937f1d58] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-type: application/json
-2026-10-03 20:28:50.398 [5a800f3d-bdf9-4351-8c9d-b6c7937f1d58] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] date: Sun, 04 Oct 2026 01:28:50 GMT
-2026-10-03 20:28:50.398 [5a800f3d-bdf9-4351-8c9d-b6c7937f1d58] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] keep-alive: timeout=60
-2026-10-03 20:28:50.398 [5a800f3d-bdf9-4351-8c9d-b6c7937f1d58] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] x-trace-id: 5a800f3d-bdf9-4351-8c9d-b6c7937f1d58
-2026-10-03 20:28:50.398 [5a800f3d-bdf9-4351-8c9d-b6c7937f1d58] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- END HTTP (151-byte body)
-2026-10-03 20:28:50.399 [5a800f3d-bdf9-4351-8c9d-b6c7937f1d58] INFO  p.e.u.c.client.MascotaClientService - Respuesta de veterinaria-mascota-ms para mascotaId=2: nombre='Michi', activo=true
-2026-10-03 20:28:50.403 [5a800f3d-bdf9-4351-8c9d-b6c7937f1d58] INFO  p.edu.upeu.citas.service.CitaService - Cita 7 creada para idCliente=1 con mascotaNombre='Michi' y estado='PENDIENTE_PAGO'
-2026-10-03 20:28:50.428 [] INFO  p.e.u.c.kafka.CitaEventosProducer - component=cita-producer eventType=cita.creada citaId=7 status=PUBLICADO topic=cita-eventos partition=0 offset=1
-2026-10-03 20:31:05.002 [] INFO  p.e.u.c.kafka.PagoEventosConsumer - component=pago-consumer eventType=pago.validado citaId=6 status=RECIBIDO partition=1 offset=1
-2026-10-03 20:31:05.010 [] INFO  p.edu.upeu.citas.service.CitaService - component=cita-service eventType=pago.validado citaId=6 status=CITA_PAGADA pagoId=2 estado=PENDIENTE_PAGO->PAGADA
-2026-10-03 20:31:05.021 [] INFO  p.e.u.c.kafka.PagoEventosConsumer - component=pago-consumer eventType=pago.validado citaId=5 status=RECIBIDO partition=0 offset=0
-2026-10-03 20:31:05.023 [] INFO  p.edu.upeu.citas.service.CitaService - component=cita-service eventType=pago.validado citaId=5 status=CITA_PAGADA pagoId=3 estado=PENDIENTE_PAGO->PAGADA
-2026-10-03 20:31:05.027 [] INFO  p.e.u.c.kafka.PagoEventosConsumer - component=pago-consumer eventType=pago.validado citaId=7 status=RECIBIDO partition=0 offset=1
-2026-10-03 20:31:05.030 [] INFO  p.edu.upeu.citas.service.CitaService - component=cita-service eventType=pago.validado citaId=7 status=CITA_PAGADA pagoId=4 estado=PENDIENTE_PAGO->PAGADA
-2026-10-03 20:31:31.026 [] INFO  p.e.u.c.kafka.PagoEventosConsumer - component=pago-consumer eventType=pago.validado citaId=4 status=RECIBIDO partition=1 offset=2
-2026-10-03 20:31:31.038 [] INFO  p.edu.upeu.citas.service.CitaService - component=cita-service eventType=pago.validado citaId=4 status=SIN_CAMBIO estadoActual=PAGADA
-2026-10-03 20:32:24.201 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2026-10-03 20:37:24.221 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-22 15:00:11.894 [] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-22 15:00:12.052 [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-22 15:00:12.909 [] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-22 15:00:13.240 [] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-10-22 15:00:13.547 [] INFO  o.s.c.o.FeignClientFactoryBean - For 'veterinaria-mascota-ms' URL not provided. Will try picking an instance via load-balancing.
+2026-10-22 15:00:14.785 [] INFO  o.s.c.o.FeignClientFactoryBean - For 'veterinaria-mascota-ms' URL not provided. Will try picking an instance via load-balancing.
+2026-10-22 15:00:15.216 [] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-22 15:00:23.574 [] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-10-22 15:00:23.861 [] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-22 15:00:23.949 [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 5 endpoints beneath base path '/actuator'
+2026-10-22 15:00:25.703 [] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-10-22 15:00:25.786 [] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-10-22 15:00:25.795 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-22 15:00:25.816 [] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-10-22 15:00:25.816 [] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-10-22 15:00:25.816 [] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-10-22 15:00:25.816 [] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-10-22 15:00:25.817 [] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-10-22 15:00:25.817 [] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-10-22 15:00:25.817 [] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-10-22 15:00:26.144 [] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-10-22 15:00:26.148 [] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-10-22 15:00:26.152 [] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-10-22 15:00:26.157 [] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1792699226157 with initial instances count: 1
+2026-10-22 15:00:26.193 [] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CITAS-MS with eureka with status UP
+2026-10-22 15:00:26.196 [] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1792699226196, current=UP, previous=STARTING]
+2026-10-22 15:00:26.200 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CITAS-MS/citas-ms:8095: registering service...
+2026-10-22 15:00:26.230 [] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8095 (http) with context path '/'
+2026-10-22 15:00:26.232 [] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8095
+2026-10-22 15:00:26.261 [] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CITAS-MS/citas-ms:8095 - registration status: 204
+2026-10-22 15:00:26.603 [] INFO  pe.edu.upeu.citas.CitasApplication - Started CitasApplication in 37.021 seconds (process running for 39.067)
+2026-10-22 15:00:26.620 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-22 15:00:26.620 [] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-22 15:00:26.748 [] INFO  o.s.k.l.KafkaMessageListenerContainer - citas-ms: partitions assigned: [pago-eventos-0, pago-eventos-1, pago-eventos-2]
+2026-10-22 15:05:25.831 [] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-10-22 15:06:45.446 [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-22 15:06:45.446 [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-22 15:06:45.459 [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2026-10-22 15:06:50.882 [1de56b5f-c743-4911-99b5-b1f090145879] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para idCliente=1 (tomado del JWT), mascotaId=1, consultando veterinaria-mascota-ms...
+2026-10-22 15:06:50.916 [1de56b5f-c743-4911-99b5-b1f090145879] INFO  p.e.u.c.client.MascotaClientService - Consultando veterinaria-mascota-ms para mascotaId=1 (circuit breaker CLOSED/HALF_OPEN)
+2026-10-22 15:06:50.926 [1de56b5f-c743-4911-99b5-b1f090145879] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> GET http://veterinaria-mascota-ms/api/v1/mascotas/1 HTTP/1.1
+2026-10-22 15:06:50.929 [1de56b5f-c743-4911-99b5-b1f090145879] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] X-Trace-ID: 1de56b5f-c743-4911-99b5-b1f090145879
+2026-10-22 15:06:50.929 [1de56b5f-c743-4911-99b5-b1f090145879] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> END HTTP (0-byte body)
+2026-10-22 15:06:51.332 [1de56b5f-c743-4911-99b5-b1f090145879] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- HTTP/1.1 200  (405ms)
+2026-10-22 15:06:51.332 [1de56b5f-c743-4911-99b5-b1f090145879] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] connection: keep-alive
+2026-10-22 15:06:51.332 [1de56b5f-c743-4911-99b5-b1f090145879] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-length: 171
+2026-10-22 15:06:51.336 [1de56b5f-c743-4911-99b5-b1f090145879] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-type: application/json
+2026-10-22 15:06:51.336 [1de56b5f-c743-4911-99b5-b1f090145879] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] date: Thu, 22 Oct 2026 20:06:51 GMT
+2026-10-22 15:06:51.336 [1de56b5f-c743-4911-99b5-b1f090145879] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] keep-alive: timeout=60
+2026-10-22 15:06:51.336 [1de56b5f-c743-4911-99b5-b1f090145879] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] x-trace-id: 1de56b5f-c743-4911-99b5-b1f090145879
+2026-10-22 15:06:51.336 [1de56b5f-c743-4911-99b5-b1f090145879] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- END HTTP (171-byte body)
+2026-10-22 15:06:51.376 [1de56b5f-c743-4911-99b5-b1f090145879] INFO  p.e.u.c.client.MascotaClientService - Respuesta de veterinaria-mascota-ms para mascotaId=1: nombre='Firulais', activo=true
+2026-10-22 15:06:51.522 [1de56b5f-c743-4911-99b5-b1f090145879] INFO  p.edu.upeu.citas.service.CitaService - Cita 13 creada para idCliente=1 con mascotaNombre='Firulais' y estado='PENDIENTE_PAGO'
+2026-10-22 15:06:52.034 [] INFO  p.e.u.c.kafka.CitaEventosProducer - component=cita-producer eventType=cita.creada citaId=13 status=PUBLICADO topic=cita-eventos partition=1 offset=4
+2026-10-22 15:06:53.343 [] INFO  p.e.u.c.kafka.PagoEventosConsumer - component=pago-consumer eventType=pago.validado citaId=13 status=RECIBIDO partition=1 offset=5
+2026-10-22 15:06:53.395 [] INFO  p.edu.upeu.citas.service.CitaService - component=cita-service eventType=pago.validado citaId=13 status=CITA_PAGADA pagoId=29 estado=PENDIENTE_PAGO->PAGADA
+2026-10-22 15:09:24.941 [966bb94f-91dc-4303-b921-71686be95625] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para idCliente=1 (tomado del JWT), mascotaId=1, consultando veterinaria-mascota-ms...
+2026-10-22 15:09:24.948 [966bb94f-91dc-4303-b921-71686be95625] INFO  p.e.u.c.client.MascotaClientService - Consultando veterinaria-mascota-ms para mascotaId=1 (circuit breaker CLOSED/HALF_OPEN)
+2026-10-22 15:09:24.950 [966bb94f-91dc-4303-b921-71686be95625] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> GET http://veterinaria-mascota-ms/api/v1/mascotas/1 HTTP/1.1
+2026-10-22 15:09:24.951 [966bb94f-91dc-4303-b921-71686be95625] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] X-Trace-ID: 966bb94f-91dc-4303-b921-71686be95625
+2026-10-22 15:09:24.951 [966bb94f-91dc-4303-b921-71686be95625] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> END HTTP (0-byte body)
+2026-10-22 15:09:25.022 [966bb94f-91dc-4303-b921-71686be95625] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- HTTP/1.1 200  (70ms)
+2026-10-22 15:09:25.022 [966bb94f-91dc-4303-b921-71686be95625] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] connection: keep-alive
+2026-10-22 15:09:25.022 [966bb94f-91dc-4303-b921-71686be95625] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-length: 171
+2026-10-22 15:09:25.022 [966bb94f-91dc-4303-b921-71686be95625] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-type: application/json
+2026-10-22 15:09:25.022 [966bb94f-91dc-4303-b921-71686be95625] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] date: Thu, 22 Oct 2026 20:09:25 GMT
+2026-10-22 15:09:25.023 [966bb94f-91dc-4303-b921-71686be95625] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] keep-alive: timeout=60
+2026-10-22 15:09:25.023 [966bb94f-91dc-4303-b921-71686be95625] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] x-trace-id: 966bb94f-91dc-4303-b921-71686be95625
+2026-10-22 15:09:25.023 [966bb94f-91dc-4303-b921-71686be95625] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- END HTTP (171-byte body)
+2026-10-22 15:09:25.023 [966bb94f-91dc-4303-b921-71686be95625] INFO  p.e.u.c.client.MascotaClientService - Respuesta de veterinaria-mascota-ms para mascotaId=1: nombre='Firulais', activo=true
+2026-10-22 15:09:25.063 [966bb94f-91dc-4303-b921-71686be95625] INFO  p.edu.upeu.citas.service.CitaService - Cita 14 creada para idCliente=1 con mascotaNombre='Firulais' y estado='PENDIENTE_PAGO'
+2026-10-22 15:09:25.183 [] INFO  p.e.u.c.kafka.CitaEventosProducer - component=cita-producer eventType=cita.creada citaId=14 status=PUBLICADO topic=cita-eventos partition=1 offset=5
+2026-10-22 15:09:25.346 [] INFO  p.e.u.c.kafka.PagoEventosConsumer - component=pago-consumer eventType=pago.validado citaId=14 status=RECIBIDO partition=1 offset=6
+2026-10-22 15:09:25.359 [] INFO  p.edu.upeu.citas.service.CitaService - component=cita-service eventType=pago.validado citaId=14 status=CITA_PAGADA pagoId=30 estado=PENDIENTE_PAGO->PAGADA
+2026-10-22 15:09:29.903 [fdac02fd-0682-4fff-bc75-ed47e08d84c0] INFO  p.edu.upeu.citas.service.CitaService - Creando cita para idCliente=1 (tomado del JWT), mascotaId=1, consultando veterinaria-mascota-ms...
+2026-10-22 15:09:29.905 [fdac02fd-0682-4fff-bc75-ed47e08d84c0] INFO  p.e.u.c.client.MascotaClientService - Consultando veterinaria-mascota-ms para mascotaId=1 (circuit breaker CLOSED/HALF_OPEN)
+2026-10-22 15:09:29.906 [fdac02fd-0682-4fff-bc75-ed47e08d84c0] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> GET http://veterinaria-mascota-ms/api/v1/mascotas/1 HTTP/1.1
+2026-10-22 15:09:29.907 [fdac02fd-0682-4fff-bc75-ed47e08d84c0] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] X-Trace-ID: fdac02fd-0682-4fff-bc75-ed47e08d84c0
+2026-10-22 15:09:29.907 [fdac02fd-0682-4fff-bc75-ed47e08d84c0] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] ---> END HTTP (0-byte body)
+2026-10-22 15:09:29.962 [fdac02fd-0682-4fff-bc75-ed47e08d84c0] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- HTTP/1.1 200  (54ms)
+2026-10-22 15:09:29.962 [fdac02fd-0682-4fff-bc75-ed47e08d84c0] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] connection: keep-alive
+2026-10-22 15:09:29.963 [fdac02fd-0682-4fff-bc75-ed47e08d84c0] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-length: 171
+2026-10-22 15:09:29.963 [fdac02fd-0682-4fff-bc75-ed47e08d84c0] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] content-type: application/json
+2026-10-22 15:09:29.963 [fdac02fd-0682-4fff-bc75-ed47e08d84c0] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] date: Thu, 22 Oct 2026 20:09:29 GMT
+2026-10-22 15:09:29.963 [fdac02fd-0682-4fff-bc75-ed47e08d84c0] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] keep-alive: timeout=60
+2026-10-22 15:09:29.963 [fdac02fd-0682-4fff-bc75-ed47e08d84c0] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] x-trace-id: fdac02fd-0682-4fff-bc75-ed47e08d84c0
+2026-10-22 15:09:29.963 [fdac02fd-0682-4fff-bc75-ed47e08d84c0] DEBUG p.e.upeu.citas.client.MascotaClient - [MascotaClient#obtener] <--- END HTTP (171-byte body)
+2026-10-22 15:09:29.964 [fdac02fd-0682-4fff-bc75-ed47e08d84c0] INFO  p.e.u.c.client.MascotaClientService - Respuesta de veterinaria-mascota-ms para mascotaId=1: nombre='Firulais', activo=true
+2026-10-22 15:09:29.974 [fdac02fd-0682-4fff-bc75-ed47e08d84c0] INFO  p.edu.upeu.citas.service.CitaService - Cita 15 creada para idCliente=1 con mascotaNombre='Firulais' y estado='PENDIENTE_PAGO'
+2026-10-22 15:09:30.006 [] INFO  p.e.u.c.kafka.CitaEventosProducer - component=cita-producer eventType=cita.creada citaId=15 status=PUBLICADO topic=cita-eventos partition=0 offset=9
+2026-10-22 15:09:30.060 [] INFO  p.e.u.c.kafka.PagoEventosConsumer - component=pago-consumer eventType=pago.fallido citaId=15 status=RECIBIDO partition=0 offset=4
+2026-10-22 15:09:30.077 [] INFO  p.edu.upeu.citas.service.CitaService - component=cita-service eventType=pago.fallido citaId=15 status=COMPENSADA pagoId=31 estado=PENDIENTE_PAGO->CANCELADA motivoPago="Tarjeta rechazada por la pasarela (simulada)"

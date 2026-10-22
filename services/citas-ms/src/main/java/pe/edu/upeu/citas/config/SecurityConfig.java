@@ -12,7 +12,7 @@ import pe.edu.upeu.citas.security.JwtRoleConverter;
 /**
  * citas-ms valida el JWT por su cuenta (defensa en profundidad): aunque una
  * petición evite el Gateway y llegue directo al puerto 8095, sin un token
- * firmado por veterinaria-auth-ms se responde 401.
+ * firmado por el realm "veterinaria" de Keycloak (S07b) se responde 401.
  */
 @Configuration
 @EnableWebSecurity

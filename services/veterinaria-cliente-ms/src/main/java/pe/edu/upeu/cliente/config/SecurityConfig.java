@@ -11,7 +11,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import pe.edu.upeu.cliente.security.JwtRoleConverter;
 
 /**
- * Resource Server: valida firma (JWKS de veterinaria-auth-ms), expiración e
+ * Resource Server: valida firma (JWKS del realm "veterinaria" de Keycloak, S07b), expiración e
  * issuer. RBAC a nivel de ruta aquí; ABAC por recurso con @PreAuthorize en
  * el controlador (@EnableMethodSecurity).
  */

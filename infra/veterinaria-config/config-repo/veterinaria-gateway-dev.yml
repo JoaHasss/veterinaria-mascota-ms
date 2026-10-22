@@ -15,10 +15,6 @@ spring:
             uri: lb://citas-ms
             predicates:
               - Path=/api/v1/citas/**
-          - id: veterinaria-auth-ms
-            uri: lb://veterinaria-auth-ms
-            predicates:
-              - Path=/api/v1/auth/**
           - id: veterinaria-cliente-ms
             uri: lb://veterinaria-cliente-ms
             predicates:
@@ -31,8 +27,13 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8085
-          jwk-set-uri: http://localhost:8085/.well-known/jwks.json
+          issuer-uri: http://localhost:18180/realms/veterinaria
+
+# S11: el navegador solo habla con el Gateway; CORS se resuelve aqui y no en
+# cada microservicio (ver CorsConfig del Gateway).
+veterinaria:
+  cors:
+    allowed-origins: http://localhost:4200
 
 logging:
   level:

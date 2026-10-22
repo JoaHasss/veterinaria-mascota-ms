@@ -10,5 +10,5 @@ export const environment = {
   // Mis citas: cada cuanto se vuelve a consultar una cita PENDIENTE_PAGO.
   pollingMs: 4000,
   // Tras este numero de consultas sin cambio se deja de sondear y se avisa al usuario.
-  pollingMaxIntentos: 15,
+  pollingMaxIntentos: 30,
 };
